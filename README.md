@@ -1,4 +1,4 @@
-# [SDH Veselice](http://sdhveselice.cz): official website
+# [SDH Veselice](http://sdhveselice.cz) official website
 
 Application is written using [Next.js](https://nextjs.org/) project.
 
@@ -22,4 +22,7 @@ Then you can find complete static website in `out` directory.
 
 ## Deploy
 
-Application will be deployed by Github actions to Cloudflare pages // todo
+Application (branch `main`) is automatically deployed to Cloudflare pages. The latest main build is located
+here [sdhveselice.pages.dev](https://sdhveselice.pages.dev)
+
+Production uses simple DNS CNAME record.
