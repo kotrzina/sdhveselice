@@ -6,7 +6,11 @@
     "dev": "next dev",
     "build": "next build && next export",
     "start": "next start",
-    "lint": "next lint"
+    "start:ci": "next build && next export && next start",
+    "lint": "next lint",
+    "serve": "yarn build && serve -l 3000 out",
+    "test": "cypress run",
+    "cypress": "cypress open"
   },
   "dependencies": {
     "bootstrap": "^5.0.0-beta3",
@@ -18,6 +22,7 @@
   "devDependencies": {
     "@types/node": "16.11.6",
     "@types/react": "17.0.33",
+    "cypress": "^8.7.0",
     "eslint": "7",
     "eslint-config-next": "12.0.1",
     "typescript": "4.4.4"
