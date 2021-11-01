@@ -1,0 +1,29 @@
+.navBox {
+    padding: 0;
+    background-color: #9e4414;
+    /*padding-top: 0.5rem;*/
+    /*padding-bottom: 0.5rem;*/
+}
+
+.navBoxItem {
+
+}
+
+.navBoxItem a {
+    color: #111 !important;
+    font-weight: bold;
+    font-size: 1.24rem;
+    padding: 1rem 1rem !important;
+}
+
+.navBoxItem a:hover {
+    background-color: #eee;
+}
+
+.navBoxItem a.none {
+    background-color: inherit;
+}
+
+.navBoxItem a.active {
+    background-color: #eee;
+}

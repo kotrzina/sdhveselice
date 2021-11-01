@@ -10,9 +10,11 @@ function MyApp({Component, pageProps}: AppProps) {
     return (
         <>
             <Header/>
-            <Container>
-                <Component {...pageProps} />
-            </Container>
+            <div className={'main'}>
+                <Container>
+                    <Component {...pageProps} />
+                </Container>
+            </div>
             <Footer/>
         </>
     )
