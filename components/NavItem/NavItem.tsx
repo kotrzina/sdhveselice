@@ -1,4 +1,3 @@
-// @flow
 import * as React from 'react';
 import {Nav} from "react-bootstrap";
 import Link from "next/link";

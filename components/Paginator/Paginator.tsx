@@ -1,5 +1,3 @@
-// @flow
-
 type Props = {
     page: number
     itemsCount: number

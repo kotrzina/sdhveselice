@@ -1,4 +1,3 @@
-// @flow
 import * as React from 'react';
 import {GetStaticPropsContext, GetStaticPropsResult} from "next";
 import {Col, Row, Table} from "react-bootstrap";

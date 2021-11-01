@@ -1,4 +1,3 @@
-// @flow
 import * as React from 'react';
 import {getArticles} from "../../../articles/ArticleList";
 import Link from "next/link"

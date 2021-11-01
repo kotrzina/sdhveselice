@@ -1,4 +1,3 @@
-// @flow
 import {getArticleBySlug, getArticles} from "../../../articles/ArticleList";
 import {GetStaticPathsResult, GetStaticPropsContext, GetStaticPropsResult} from "next";
 
