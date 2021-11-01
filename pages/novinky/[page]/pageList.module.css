@@ -1,0 +1,10 @@
+.article {
+    padding: 5px 10px;
+    margin: 10px 0;
+    background-color: #EEE;
+    border-radius: 25px;
+}
+
+.article img {
+    border-radius: 25px;
+}
