@@ -1,5 +1,7 @@
 # [SDH Veselice](http://sdhveselice.cz) official website
 
+[![cypress](https://github.com/kotrzina/sdhveselice/actions/workflows/cypress.yml/badge.svg)](https://github.com/kotrzina/sdhveselice/actions/workflows/cypress.yml)
+
 Application is written using [Next.js](https://nextjs.org/) project.
 
 ## Develop
