@@ -8,7 +8,6 @@
     "start": "next start",
     "start:ci": "next build && next export && next start",
     "lint": "next lint",
-    "serve": "yarn build && serve -l 3000 out",
     "test": "cypress run",
     "cypress": "cypress open"
   },
