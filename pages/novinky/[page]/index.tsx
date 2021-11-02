@@ -26,7 +26,7 @@ const ArticleListPage = (props: Props) => {
 
                             <Row>
                                 <Col lg={3}>
-                                    <Image src={article.getImage()} thumbnail/>
+                                    <Image alt={"Ilustrační obrázek pro " + article.getTitle()} src={article.getImage()} thumbnail/>
                                 </Col>
                                 <Col lg={9}>
                                     <p>{article.getPreheader()}</p>
