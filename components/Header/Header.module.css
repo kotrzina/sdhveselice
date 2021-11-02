@@ -1,29 +1,34 @@
 .navBox {
     padding: 0;
     background-color: #9e4414;
-    /*padding-top: 0.5rem;*/
-    /*padding-bottom: 0.5rem;*/
 }
 
-.navBoxItem {
+#navBoxList {
 
 }
 
-.navBoxItem a {
-    color: #111 !important;
+#navBoxList a {
+    color: #fff;
     font-weight: bold;
     font-size: 1.24rem;
-    padding: 1rem 1rem !important;
+    padding: 1rem 1.1rem;
 }
 
-.navBoxItem a:hover {
-    background-color: #eee;
-}
-
-.navBoxItem a.none {
+#navBoxList a.none {
     background-color: inherit;
 }
 
-.navBoxItem a.active {
+#navBoxList a:hover {
+    color: #000;
     background-color: #eee;
+}
+
+#navBoxList a.active {
+    color: #000;
+    background-color: #eee;
+}
+
+#navBoxList a.lesempolem:hover {
+    color: #FFF;
+    background-color: #289c4a;
 }

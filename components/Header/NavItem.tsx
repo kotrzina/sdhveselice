@@ -26,6 +26,10 @@ export const NavItem = (props: Props) => {
             return css.active
         }
 
+        if (link.includes('lesempolem')) {
+            return css.lesempolem
+        }
+
         return css.none
     }
 
