@@ -4,8 +4,9 @@ import Link from "next/link"
 import {Col, Image, Pagination, Row} from 'react-bootstrap';
 import {GetStaticPathsResult, GetStaticPropsContext, GetStaticPropsResult} from "next";
 import listStyle from './pageList.module.css'
+import {Article} from "../../../articles/Article";
 
-const itemsPerPage = 15
+const itemsPerPage = 10
 
 type Props = {
     page: number
@@ -13,40 +14,53 @@ type Props = {
 };
 
 const ArticleListPage = (props: Props) => {
+    function getArticleLink(article: Article): string {
+        return '/clanek/' + article.getSlug()
+    }
+
     return (
         <>
-            <h1>Novinky</h1>
-            <div>
-                {getArticles().slice((props.page - 1) * itemsPerPage, props.page * itemsPerPage).map((article, k) => {
-                    return (
-                        <div key={k} className={listStyle.article}>
-                            <Link href={"/clanek/" + article.getSlug()}>
-                                <a><h2>{article.getTitle()}</h2></a>
-                            </Link>
-
-                            <Row>
-                                <Col lg={3}>
-                                    <Image alt={"Ilustrační obrázek pro " + article.getTitle()} src={article.getImage()} thumbnail/>
-                                </Col>
-                                <Col lg={9}>
-                                    <p>{article.getPreheader()}</p>
-                                </Col>
-                            </Row>
-                        </div>
-                    )
-                })}
-            </div>
-
-            <Pagination>
-                {Array.from({length: props.pagesCount}, (v, k) => k + 1).map(ia => {
-                    return (
-                        <Link key={ia} href={'/novinky/' + ia} passHref>
-                            <Pagination.Item active={ia == props.page}>{ia}</Pagination.Item>
-                        </Link>
-                    )
-                })}
-            </Pagination>
-
+            <Row>
+                <Col lg={10}>
+                    <h1>Novinky</h1>
+                    <div>
+                        {getArticles().slice((props.page - 1) * itemsPerPage, props.page * itemsPerPage).map((article, k) => {
+                            return (
+                                <div key={k} className={listStyle.article}>
+                                    <Row>
+                                        <Col lg={4}>
+                                            <Link href={getArticleLink(article)} passHref>
+                                                <a>
+                                                    <Image alt={"Ilustrační obrázek pro " + article.getTitle()} src={article.getImage()} thumbnail/>
+                                                </a>
+                                            </Link>
+                                        </Col>
+                                        <Col lg={8}>
+                                            <Link href={getArticleLink(article)}>
+                                                <a><h2>{article.getTitle()}</h2></a>
+                                            </Link>
+                                            <p>{article.getPreheader()}</p>
+                                        </Col>
+                                    </Row>
+                                </div>
+                            )
+                        })}
+                    </div>
+                </Col>
+            </Row>
+            <Row>
+                <Col lg={12}>
+                    <Pagination>
+                        {Array.from({length: props.pagesCount}, (v, k) => k + 1).map(ia => {
+                            return (
+                                <Link key={ia} href={'/novinky/' + ia} passHref>
+                                    <Pagination.Item active={ia == props.page}>{ia}</Pagination.Item>
+                                </Link>
+                            )
+                        })}
+                    </Pagination>
+                </Col>
+            </Row>
         </>
     );
 };

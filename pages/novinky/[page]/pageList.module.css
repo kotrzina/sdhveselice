@@ -1,10 +1,20 @@
 .article {
-    padding: 5px 10px;
-    margin: 10px 0;
-    background-color: #EEE;
-    border-radius: 25px;
+    padding: 5px 0 10px 0;
+    margin: 10px 0 10px 0;
+}
+
+.article:not(:last-child) {
+    border-bottom: 1px #553D00 solid;
 }
 
 .article img {
-    border-radius: 25px;
+    border: 2px #dee2e6 solid;
+}
+
+.article img:hover {
+    border: 2px #c45640 solid;
+}
+
+.article a:hover h2 {
+    color: #c45640;
 }
