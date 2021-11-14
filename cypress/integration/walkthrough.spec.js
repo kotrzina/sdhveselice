@@ -6,7 +6,10 @@ describe('walk', () => {
         cy.get('h2 a').click()
         cy.get('h1').should('contain.text', 'Novinky')
         cy.get('h2').first().click()
+
+        // Contacts
         cy.get('.navbar-nav a').contains('Kontakty').click()
         cy.get('h1').should('contain.text', 'Kontakty')
+        cy.contains("65339851")
     })
 })
