@@ -23,9 +23,8 @@ export class Article20150106 extends Article {
             <>
                 <p>Na výroční valné hromadě, která se konala v sobotu 3. 1. 2015 byl zvolen nový výbor na další funkční období 5-ti
                     let. Členové našeho výboru nebyli nijak vyměněni, pouze došlo k prohození některých funkcí. Nový výbor SDH
-                    Veselice bude následující roky fungovat v tomto složení:</p>
-
-                <div className="clear"></div>
+                    Veselice bude následující roky fungovat v tomto složení:
+                </p>
 
                 <h2>Složení:</h2>
                 <table className="table table-bordered">

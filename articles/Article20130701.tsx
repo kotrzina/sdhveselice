@@ -22,8 +22,9 @@ export class Article20130701 extends Article {
         return (
             <>
                 <p>Na této stránce lze najít výsledky ze závodů ve Veselici od roku 2006 do roku 2010. Některé ročníky jsou
-                    nekompletní a jejich výsledky již nejsou dohledatelné.</p>
-                <div className="clear"/>
+                    nekompletní a jejich výsledky již nejsou dohledatelné.
+                </p>
+
                 <h2>1996 - 0. ročník</h2>
                 <p>Závody se konaly 23.6.1996 a zúčastnilo se jich 9 družstvech mužů.</p>
                 <table className="table table-bordered">
@@ -37,6 +38,7 @@ export class Article20130701 extends Article {
                     </tr>
                 </table>
                 <hr/>
+
                 <h2>1997 - 1. ročník</h2>
                 <p>Závody se konaly 8.6.1997 a zúčastnilo se jich 15 družstvech mužů.</p>
                 <table className="table table-bordered">

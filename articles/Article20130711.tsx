@@ -21,7 +21,6 @@ export class Article20130711 extends Article {
     getContent(): JSX.Element {
         return (
             <>
-                <div className="clear"></div>
                 <h2>Ženy</h2>
                 <table className="table table-bordered">
                     <tr>

@@ -26,10 +26,9 @@ export class Article20160528 extends Article {
                 <p>Ke štafetě nastoupil na okno Lubomír Němec, bariéru přeskočil Martin Nečas, hadice s kladinou zdolal Tomáš Kozák
                     a s hasicím přístrojem uzavíral štafetu Radim Jarůšek. Požární útok byl ve složení: koš Lubomír Němec, spoj
                     savic Lukáš Manoušek, stroj Bohumil Nečas, béčka Tomáš Kozák, rozdělovač Radim Jarůšek, levý proud Martin Nečas
-                    a pravý proud Marek Jarůšek. V tomto složení se našemu sboru podařilo vybojovat krásné 2. místo.</p>
+                    a pravý proud Marek Jarůšek. V tomto složení se našemu sboru podařilo vybojovat krásné 2. místo.
+                </p>
 
-                <div className="fix"/>
-                <br/>
                 <h2>Muži</h2>
                 <table className="table table-bordered">
                     <thead>

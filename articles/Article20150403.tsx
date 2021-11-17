@@ -29,8 +29,6 @@ export class Article20150403 extends Article {
                         Přijďte a prožijte spolu s námi příjemný den plný zábavy, legrace, občerstvení a nabitého programu.</strong>
                 </p>
 
-                <div className="clear"></div>
-
                 <h3>Připravli jsme pro vás:</h3>
                 <ul>
                     <li>medové pivo a domací klobásy</li>
