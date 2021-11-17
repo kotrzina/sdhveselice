@@ -1,4 +1,5 @@
 import {Article} from "./Article";
+import {Video} from "../components/Video/Video";
 
 export class Article20180203 extends Article {
 
@@ -25,12 +26,8 @@ export class Article20180203 extends Article {
                     SDH Veselice a sdružení VESELICKÁ KAPLIČKA vás zvou na ostatkový průvod obcí, který se uskuteční v&nbsp;sobotu&nbsp;10.&nbsp;2.&nbsp;2018.
                     Sraz masek je ve 12:30 u staré hasičské zbrojnice.
                 </p>
-                <div className="clear"/>
 
-                <h2>Sestříhané video z minulého roku</h2>
-                <div className="responsive-video">
-                    <iframe src="https://www.youtube.com/embed/27no877EabM" frameBorder="0" allowFullScreen/>
-                </div>
+                <Video src={"https://www.youtube.com/embed/27no877EabM"} title={"Sestříhané video z minulého roku"}/>
             </>
         )
     }
