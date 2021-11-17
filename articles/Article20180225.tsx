@@ -1,4 +1,5 @@
 import {Article} from "./Article";
+import {Gallery} from "../components/Gallery/Gallery";
 
 export class Article20180225 extends Article {
 
@@ -18,6 +19,15 @@ export class Article20180225 extends Article {
         return "Dne 25. února 2018 se na poli pod rozhlednou konal vůbec první běh na historických lyžích."
     }
 
+    gallery: Array<string> = [
+        "/gallery/lyze_2018/1.jpg",
+        "/gallery/lyze_2018/2.jpg",
+        "/gallery/lyze_2018/3.jpg",
+        "/gallery/lyze_2018/4.jpg",
+        "/gallery/lyze_2018/5.jpg",
+        "/gallery/lyze_2018/6.jpg",
+    ]
+
     getContent(): JSX.Element {
         return (
             <>
@@ -27,29 +37,7 @@ export class Article20180225 extends Article {
                     se bojovalo až do posledních metrů. Předání cen a ukončení akce proběhlo v Hospůdce na Kasárnách.
                 </p>
 
-                <div className="clear"></div>
-
-                <h2>Galerie:</h2>
-                <div className="gallery">
-                    <div className="col-lg-6 col-xs-12">
-                        <img alt="Obrazek v galerii" className="img-responsive" src="/gallery/lyze_2018/1.jpg"/>
-                    </div>
-                    <div className="col-lg-6 col-xs-12">
-                        <img alt="Obrazek v galerii" className="img-responsive" src="/gallery/lyze_2018/2.jpg"/>
-                    </div>
-                    <div className="col-lg-6 col-xs-12">
-                        <img alt="Obrazek v galerii" className="img-responsive" src="/gallery/lyze_2018/3.jpg"/>
-                    </div>
-                    <div className="col-lg-6 col-xs-12">
-                        <img alt="Obrazek v galerii" className="img-responsive" src="/gallery/lyze_2018/4.jpg"/>
-                    </div>
-                    <div className="col-lg-6 col-xs-12">
-                        <img alt="Obrazek v galerii" className="img-responsive" src="/gallery/lyze_2018/5.jpg"/>
-                    </div>
-                    <div className="col-lg-6 col-xs-12">
-                        <img alt="Obrazek v galerii" className="img-responsive" src="/gallery/lyze_2018/6.jpg"/>
-                    </div>
-                </div>
+                <Gallery srcs={this.gallery}/>
 
             </>
         )

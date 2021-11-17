@@ -1,5 +1,6 @@
 import {getArticleBySlug, getArticles} from "../../../articles/ArticleList";
 import {GetStaticPathsResult, GetStaticPropsContext, GetStaticPropsResult} from "next";
+import {Col, Row} from "react-bootstrap";
 
 
 type Props = {
@@ -9,10 +10,16 @@ type Props = {
 
 const ArticlePage = (props: Props) => {
     return (
-        <div>
-            <h1>{props.title}</h1>
-            <div dangerouslySetInnerHTML={{__html: props.content}}/>
-        </div>
+        <>
+            <Row>
+                <Col lg={12}>
+                    <h1>{props.title}</h1>
+                </Col>
+            </Row>
+            <Row>
+                <Col lg={12} dangerouslySetInnerHTML={{__html: props.content}}/>
+            </Row>
+        </>
     );
 };
 
