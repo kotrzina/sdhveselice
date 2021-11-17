@@ -1,4 +1,5 @@
 import {Article} from "./Article";
+import {Gallery} from "../components/Gallery/Gallery";
 
 export class Article20160719 extends Article {
 
@@ -18,6 +19,18 @@ export class Article20160719 extends Article {
         return "O víkendu od 10. do 13. 6. se u nás v obci uskutečnila pod naší záštitou tradiční pouť."
     }
 
+    gallery: Array<string> = [
+        "/gallery/pout_2016/1.JPG",
+        "/gallery/pout_2016/2.JPG",
+        "/gallery/pout_2016/3.JPG",
+        "/gallery/pout_2016/4.JPG",
+        "/gallery/pout_2016/5.JPG",
+        "/gallery/pout_2016/6.JPG",
+        "/gallery/pout_2016/7.JPG",
+        "/gallery/pout_2016/8.JPG",
+        "/gallery/pout_2016/9.JPG",
+    ]
+
     getContent(): JSX.Element {
         return (
             <>
@@ -28,38 +41,10 @@ export class Article20160719 extends Article {
                     více lidí. Součástí setkání rodáků bylo také představení nové publikace o historii Veselice, kterou si můžete
                     zakoupit v turistickém informačním centru v prostorech kulturního domu. Večer k nám dorazila z nedalekých
                     Petrovic kapela TRIO KENT, která bavila asi 80 příchozích do ranních hodin. Neděle už tradičně patřila
-                    sousedskému posezení s dobrým pivem a jídlem.</p>
+                    sousedskému posezení s dobrým pivem a jídlem.
+                </p>
 
-                <h2>Galerie:</h2>
-                <div className="gallery">
-                    <div className="col-lg-6 col-xs-12">
-                        <img alt="Obrazek v galerii" className="img-responsive" src="/gallery/pout_2016/1.JPG"/>
-                    </div>
-                    <div className="col-lg-6 col-xs-12">
-                        <img alt="Obrazek v galerii" className="img-responsive" src="/gallery/pout_2016/2.JPG"/>
-                    </div>
-                    <div className="col-lg-6 col-xs-12">
-                        <img alt="Obrazek v galerii" className="img-responsive" src="/gallery/pout_2016/3.JPG"/>
-                    </div>
-                    <div className="col-lg-6 col-xs-12">
-                        <img alt="Obrazek v galerii" className="img-responsive" src="/gallery/pout_2016/4.JPG"/>
-                    </div>
-                    <div className="col-lg-6 col-xs-12">
-                        <img alt="Obrazek v galerii" className="img-responsive" src="/gallery/pout_2016/5.JPG"/>
-                    </div>
-                    <div className="col-lg-6 col-xs-12">
-                        <img alt="Obrazek v galerii" className="img-responsive" src="/gallery/pout_2016/6.JPG"/>
-                    </div>
-                    <div className="col-lg-6 col-xs-12">
-                        <img alt="Obrazek v galerii" className="img-responsive" src="/gallery/pout_2016/7.JPG"/>
-                    </div>
-                    <div className="col-lg-6 col-xs-12">
-                        <img alt="Obrazek v galerii" className="img-responsive" src="/gallery/pout_2016/8.JPG"/>
-                    </div>
-                    <div className="col-lg-6 col-xs-12">
-                        <img alt="Obrazek v galerii" className="img-responsive" src="/gallery/pout_2016/9.JPG"/>
-                    </div>
-                </div>
+                <Gallery srcs={this.gallery}/>
             </>
         )
     }

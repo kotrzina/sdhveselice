@@ -1,4 +1,6 @@
 import {Article} from "./Article";
+import {Video} from "../components/Video/Video";
+import {Gallery} from "../components/Gallery/Gallery";
 
 export class Article20170612 extends Article {
 
@@ -18,6 +20,19 @@ export class Article20170612 extends Article {
         return "Ve dnech od 10. do 12. června 2017 se v místním sportovním areálu uskutečnila svatoantonínská pouť a běžecké závody."
     }
 
+    gallery: Array<string> = [
+        "/gallery/pout_2017/1.jpg",
+        "/gallery/pout_2017/2.jpg",
+        "/gallery/pout_2017/3.jpg",
+        "/gallery/pout_2017/4.jpg",
+        "/gallery/pout_2017/5.jpg",
+        "/gallery/pout_2017/6.jpg",
+        "/gallery/pout_2017/7.jpg",
+        "/gallery/pout_2017/8.jpg",
+        "/gallery/pout_2017/9.jpg",
+        "/gallery/pout_2017/10.jpg",
+    ]
+
     getContent(): JSX.Element {
         return (
             <>
@@ -30,51 +45,10 @@ export class Article20170612 extends Article {
                     necelá stovka lidí. Neděle již tradičně patřila příjemnému posezení při pivu a jídlu z udírny. Vše bylo ukončeno
                     pondělními dozvuky.</p>
 
-                <div className="clear"></div>
+                <Video src={"https://www.youtube.com/embed/64maqGMFhfI"} title={"Video:"}/>
+                <Video src={"https://www.youtube.com/embed/RzNI4SScJBc"} title={"Timelapse z příprav:"}/>
 
-                <h2>Video:</h2>
-                <div className="responsive-video">
-                    <iframe src="https://www.youtube.com/embed/64maqGMFhfI" frameBorder="0" allowFullScreen/>
-                </div>
-
-                <h2>Timelapse z příprav:</h2>
-                <div className="responsive-video">
-                    <iframe src="https://www.youtube.com/embed/RzNI4SScJBc" frameBorder="0" allowFullScreen/>
-                </div>
-
-                <h2>Galerie:</h2>
-                <div className="gallery">
-                    <div className="col-lg-6 col-xs-12">
-                        <img alt="Obrazek v galerii" className="img-responsive" src="/gallery/pout_2017/1.jpg"/>
-                    </div>
-                    <div className="col-lg-6 col-xs-12">
-                        <img alt="Obrazek v galerii" className="img-responsive" src="/gallery/pout_2017/2.jpg"/>
-                    </div>
-                    <div className="col-lg-6 col-xs-12">
-                        <img alt="Obrazek v galerii" className="img-responsive" src="/gallery/pout_2017/3.jpg"/>
-                    </div>
-                    <div className="col-lg-6 col-xs-12">
-                        <img alt="Obrazek v galerii" className="img-responsive" src="/gallery/pout_2017/4.jpg"/>
-                    </div>
-                    <div className="col-lg-6 col-xs-12">
-                        <img alt="Obrazek v galerii" className="img-responsive" src="/gallery/pout_2017/5.jpg"/>
-                    </div>
-                    <div className="col-lg-6 col-xs-12">
-                        <img alt="Obrazek v galerii" className="img-responsive" src="/gallery/pout_2017/6.jpg"/>
-                    </div>
-                    <div className="col-lg-6 col-xs-12">
-                        <img alt="Obrazek v galerii" className="img-responsive" src="/gallery/pout_2017/7.jpg"/>
-                    </div>
-                    <div className="col-lg-6 col-xs-12">
-                        <img alt="Obrazek v galerii" className="img-responsive" src="/gallery/pout_2017/8.jpg"/>
-                    </div>
-                    <div className="col-lg-6 col-xs-12">
-                        <img alt="Obrazek v galerii" className="img-responsive" src="/gallery/pout_2017/9.jpg"/>
-                    </div>
-                    <div className="col-lg-6 col-xs-12">
-                        <img alt="Obrazek v galerii" className="img-responsive" src="/gallery/pout_2017/10.jpg"/>
-                    </div>
-                </div>
+                <Gallery srcs={this.gallery}/>
             </>
         )
     }

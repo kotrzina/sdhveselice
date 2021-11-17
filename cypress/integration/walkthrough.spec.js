@@ -38,4 +38,21 @@ describe('walk', () => {
         cy.get('h1').should('contain.text', 'Kontakty')
         cy.contains("65339851")
     })
+
+    it('test #2 - articles', () => {
+        cy.visit('/novinky/1/')
+        cy.get('.page-link').last().then(($a => {
+            const pages = parseInt($a.text())
+            for (let i = 1; i <= pages; i++) {
+                cy.visit('/novinky/' + i + '/')
+                cy.get('.articleList .col-lg-4 a').each(link => {
+                    cy.visit(link.attr('href'))
+                    cy.get('h1').then(($h1) => {
+                        const t = $h1.text();
+                        expect(t.length).to.be.at.least(8)
+                    })
+                })
+            }
+        }))
+    })
 })

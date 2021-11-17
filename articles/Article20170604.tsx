@@ -1,4 +1,5 @@
 import {Article} from "./Article";
+import {Video} from "../components/Video/Video";
 
 export class Article20170604 extends Article {
 
@@ -35,13 +36,7 @@ export class Article20170604 extends Article {
                     </a>
                 </p>
 
-                <div className="clear"/>
-
-                <h2>Video - hořící zastávka</h2>
-                <div className="responsive-video">
-                    <iframe src="https://www.youtube.com/embed/BC1PTHY1m8k" frameBorder="0"
-                            allowFullScreen></iframe>
-                </div>
+                <Video src={"https://www.youtube.com/embed/BC1PTHY1m8k"} title={"Video - hořící zastávka"}/>
             </>
         )
     }

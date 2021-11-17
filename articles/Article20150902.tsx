@@ -1,4 +1,6 @@
 import {Article} from "./Article";
+import {Gallery} from "../components/Gallery/Gallery";
+import {Video} from "../components/Video/Video";
 
 export class Article20150902 extends Article {
 
@@ -18,6 +20,16 @@ export class Article20150902 extends Article {
         return "V pátek 28. 8. 2015 se za spoluúčasti sdružení Kotržina konalo rozloučení s letními prázdninami."
     }
 
+    gallery: Array<string> = [
+        "/gallery/zakonceni_prazdnin_s_orlojem/1.jpg",
+        "/gallery/zakonceni_prazdnin_s_orlojem/2.jpg",
+        "/gallery/zakonceni_prazdnin_s_orlojem/3.jpg",
+        "/gallery/zakonceni_prazdnin_s_orlojem/4.jpg",
+        "/gallery/zakonceni_prazdnin_s_orlojem/5.jpg",
+        "/gallery/zakonceni_prazdnin_s_orlojem/6.jpg",
+        "/gallery/zakonceni_prazdnin_s_orlojem/7.jpg",
+    ]
+
     getContent(): JSX.Element {
         return (
             <>
@@ -26,45 +38,12 @@ export class Article20150902 extends Article {
                     rozhlednu, kde byly nachystány pravidelné závody ve výběhu. Tentokrát s doprovodnou disciplínou slaňování, která
                     byla úrčena pro všechny odvážné účastníky. V tu dobu již bylo nachystáno sousedské posezení v parku, na které s
                     přibývajícím časem přicházelo čím dál tím více lidí. Celá akce pak vyvrcholila živým orlojem, na jehož záznam se
-                    můžete podívat v krátkém video pod článkem. Celý večer pak uzavřel připravený ohňostroj.</p>
-                <div className="fix"/>
-                <div className="clear"/>
-                <br/>
-                <div className="responsive-video">
-                    <iframe src="https://www.youtube.com/embed/DFu8ODBwMp0" frameBorder="0" allowFullScreen/>
-                </div>
+                    můžete podívat v krátkém video pod článkem. Celý večer pak uzavřel připravený ohňostroj.
+                </p>
 
-                <h2>Galerie:</h2>
-                <div className="gallery">
-                    <div className="col-lg-6 col-xs-12">
-                        <img alt="Obrazek v galerii" className="img-responsive"
-                             src="/gallery/zakonceni_prazdnin_s_orlojem/1.jpg"/>
-                    </div>
-                    <div className="col-lg-6 col-xs-12">
-                        <img alt="Obrazek v galerii" className="img-responsive"
-                             src="/gallery/zakonceni_prazdnin_s_orlojem/2.jpg"/>
-                    </div>
-                    <div className="col-lg-6 col-xs-12">
-                        <img alt="Obrazek v galerii" className="img-responsive"
-                             src="/gallery/zakonceni_prazdnin_s_orlojem/3.jpg"/>
-                    </div>
-                    <div className="col-lg-6 col-xs-12">
-                        <img alt="Obrazek v galerii" className="img-responsive"
-                             src="/gallery/zakonceni_prazdnin_s_orlojem/4.jpg"/>
-                    </div>
-                    <div className="col-lg-6 col-xs-12">
-                        <img alt="Obrazek v galerii" className="img-responsive"
-                             src="/gallery/zakonceni_prazdnin_s_orlojem/5.jpg"/>
-                    </div>
-                    <div className="col-lg-6 col-xs-12">
-                        <img alt="Obrazek v galerii" className="img-responsive"
-                             src="/gallery/zakonceni_prazdnin_s_orlojem/6.jpg"/>
-                    </div>
-                    <div className="col-lg-6 col-xs-12">
-                        <img alt="Obrazek v galerii" className="img-responsive"
-                             src="/gallery/zakonceni_prazdnin_s_orlojem/7.jpg"/>
-                    </div>
-                </div>
+                <Video src={'https://www.youtube.com/embed/DFu8ODBwMp0'}/>
+
+                <Gallery srcs={this.gallery}/>
             </>
         )
     }

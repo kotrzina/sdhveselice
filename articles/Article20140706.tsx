@@ -1,4 +1,5 @@
 import {Article} from "./Article";
+import {Gallery} from "../components/Gallery/Gallery";
 
 export class Article20140706 extends Article {
 
@@ -18,6 +19,24 @@ export class Article20140706 extends Article {
         return "Sbor dobrovolných hasičů Veselice uspořádal pro všechny občany tradiční Svatonatonínskou pouť, která se uskutečnila o víkendu 13. - 15. června 2014."
     }
 
+    gallery: Array<string> = [
+        "/gallery/pout_2014/1.jpg",
+        "/gallery/pout_2014/2.jpg",
+        "/gallery/pout_2014/3.jpg",
+        "/gallery/pout_2014/4.jpg",
+        "/gallery/pout_2014/5.jpg",
+        "/gallery/pout_2014/6.jpg",
+        "/gallery/pout_2014/7.jpg",
+        "/gallery/pout_2014/8.jpg",
+        "/gallery/pout_2014/9.jpg",
+        "/gallery/pout_2014/10.jpg",
+        "/gallery/pout_2014/11.jpg",
+        "/gallery/pout_2014/12.jpg",
+        "/gallery/pout_2014/13.jpg",
+        "/gallery/pout_2014/14.jpg",
+        "/gallery/pout_2014/15.jpg",
+    ]
+
     getContent(): JSX.Element {
         return (
             <>
@@ -26,8 +45,6 @@ export class Article20140706 extends Article {
                     uskutečnila o víkendu 13. - 15. června 2014. Letošní pouťové oslavy se uskutečnily opět ve sportovním areálu v
                     Malé Veselici
                 </p>
-
-                <div className="clear"></div>
 
                 <h2>Pátek</h2>
                 <p>V pátek večer proběhla prvotní část oslav. Do Veselice dorazila kapela TRIO KENT z nedalekých Petrovic, která
@@ -48,55 +65,7 @@ export class Article20140706 extends Article {
                     řádit :) . Přes celý den fungovalo občerstvení včetně udírny.
                 </p>
 
-
-                <h2>Galerie:</h2>
-                <div className="gallery">
-                    <div className="col-lg-6 col-xs-12">
-                        <img alt="Obrazek v galerii" className="img-responsive" src="/gallery/pout_2014/1.jpg"/>
-                    </div>
-                    <div className="col-lg-6 col-xs-12">
-                        <img alt="Obrazek v galerii" className="img-responsive" src="/gallery/pout_2014/2.jpg"/>
-                    </div>
-                    <div className="col-lg-6 col-xs-12">
-                        <img alt="Obrazek v galerii" className="img-responsive" src="/gallery/pout_2014/3.jpg"/>
-                    </div>
-                    <div className="col-lg-6 col-xs-12">
-                        <img alt="Obrazek v galerii" className="img-responsive" src="/gallery/pout_2014/4.jpg"/>
-                    </div>
-                    <div className="col-lg-6 col-xs-12">
-                        <img alt="Obrazek v galerii" className="img-responsive" src="/gallery/pout_2014/5.jpg"/>
-                    </div>
-                    <div className="col-lg-6 col-xs-12">
-                        <img alt="Obrazek v galerii" className="img-responsive" src="/gallery/pout_2014/6.jpg"/>
-                    </div>
-                    <div className="col-lg-6 col-xs-12">
-                        <img alt="Obrazek v galerii" className="img-responsive" src="/gallery/pout_2014/7.jpg"/>
-                    </div>
-                    <div className="col-lg-6 col-xs-12">
-                        <img alt="Obrazek v galerii" className="img-responsive" src="/gallery/pout_2014/8.jpg"/>
-                    </div>
-                    <div className="col-lg-6 col-xs-12">
-                        <img alt="Obrazek v galerii" className="img-responsive" src="/gallery/pout_2014/9.jpg"/>
-                    </div>
-                    <div className="col-lg-6 col-xs-12">
-                        <img alt="Obrazek v galerii" className="img-responsive" src="/gallery/pout_2014/10.jpg"/>
-                    </div>
-                    <div className="col-lg-6 col-xs-12">
-                        <img alt="Obrazek v galerii" className="img-responsive" src="/gallery/pout_2014/11.jpg"/>
-                    </div>
-                    <div className="col-lg-6 col-xs-12">
-                        <img alt="Obrazek v galerii" className="img-responsive" src="/gallery/pout_2014/12.jpg"/>
-                    </div>
-                    <div className="col-lg-6 col-xs-12">
-                        <img alt="Obrazek v galerii" className="img-responsive" src="/gallery/pout_2014/13.jpg"/>
-                    </div>
-                    <div className="col-lg-6 col-xs-12">
-                        <img alt="Obrazek v galerii" className="img-responsive" src="/gallery/pout_2014/14.jpg"/>
-                    </div>
-                    <div className="col-lg-6 col-xs-12">
-                        <img alt="Obrazek v galerii" className="img-responsive" src="/gallery/pout_2014/15.jpg"/>
-                    </div>
-                </div>
+                <Gallery srcs={this.gallery}/>
             </>
         )
     }

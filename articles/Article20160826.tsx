@@ -21,7 +21,6 @@ export class Article20160826 extends Article {
     getContent(): JSX.Element {
         return (
             <>
-                <div className="clear"></div>
                 <h2>Program:</h2>
                 <ul>
                     <li>17:00 seskok parašutistů na poli pod rozhlednou</li>
@@ -34,15 +33,13 @@ export class Article20160826 extends Article {
 
                 <p>
                     Přůběžně: pivo, limo, udírna, výstava korunovačních klenotů, střelecká soutěž o zlatou jízdenku, sběr
-                    památečních
-                    koulí
+                    památečních koulí
                 </p>
 
                 <p>Zve: společenství Kotržiny</p>
 
-                <br/><br/>
-
-                <img width="60%" src="/www/manager/plakat-konec-prazdnin-2016.jpg" alt="Plakát"/>
+                <h2>Plakát:</h2>
+                <img width="40%" src="/articles/plakat-konec-prazdnin-2016.jpg" alt="Plakát"/>
             </>
         )
     }

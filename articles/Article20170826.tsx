@@ -1,4 +1,6 @@
 import {Article} from "./Article";
+import {Video} from "../components/Video/Video";
+import {Gallery} from "../components/Gallery/Gallery";
 
 export class Article20170826 extends Article {
 
@@ -18,6 +20,19 @@ export class Article20170826 extends Article {
         return "Dne 26. 8. 2017 se ve Veselici v areálu u horních vojáků uskutečnilo pod záštitou společenství Kotržina a Pavla Zmeka již tradiční rozloučení s prázdninami."
     }
 
+    gallery: Array<string> = [
+        "/gallery/konec_prazdnin_2017/1.jpg",
+        "/gallery/konec_prazdnin_2017/2.jpg",
+        "/gallery/konec_prazdnin_2017/3.jpg",
+        "/gallery/konec_prazdnin_2017/4.jpg",
+        "/gallery/konec_prazdnin_2017/5.jpg",
+        "/gallery/konec_prazdnin_2017/6.jpg",
+        "/gallery/konec_prazdnin_2017/7.jpg",
+        "/gallery/konec_prazdnin_2017/8.jpg",
+        "/gallery/konec_prazdnin_2017/9.jpg",
+        "/gallery/konec_prazdnin_2017/10.jpg",
+    ]
+
     getContent(): JSX.Element {
         return (
             <>
@@ -34,46 +49,9 @@ export class Article20170826 extends Article {
                     a zejména lidem, kteří se na uskutečnění události podíleli.
                 </p>
 
-                <div className="clear"></div>
+                <Video src={"https://www.youtube.com/embed/VR_HQtW-iv8"}/>
 
-                <h2>Video:</h2>
-                <div className="responsive-video">
-                    <iframe src="https://www.youtube.com/embed/VR_HQtW-iv8" frameBorder="0" allowFullScreen/>
-                </div>
-
-                <h2>Galerie:</h2>
-                <div className="gallery">
-                    <div className="col-lg-6 col-xs-12">
-                        <img alt="Obrazek v galerii" className="img-responsive" src="/gallery/konec_prazdnin_2017/1.jpg"/>
-                    </div>
-                    <div className="col-lg-6 col-xs-12">
-                        <img alt="Obrazek v galerii" className="img-responsive" src="/gallery/konec_prazdnin_2017/2.jpg"/>
-                    </div>
-                    <div className="col-lg-6 col-xs-12">
-                        <img alt="Obrazek v galerii" className="img-responsive" src="/gallery/konec_prazdnin_2017/3.jpg"/>
-                    </div>
-                    <div className="col-lg-6 col-xs-12">
-                        <img alt="Obrazek v galerii" className="img-responsive" src="/gallery/konec_prazdnin_2017/4.jpg"/>
-                    </div>
-                    <div className="col-lg-6 col-xs-12">
-                        <img alt="Obrazek v galerii" className="img-responsive" src="/gallery/konec_prazdnin_2017/5.jpg"/>
-                    </div>
-                    <div className="col-lg-6 col-xs-12">
-                        <img alt="Obrazek v galerii" className="img-responsive" src="/gallery/konec_prazdnin_2017/6.jpg"/>
-                    </div>
-                    <div className="col-lg-6 col-xs-12">
-                        <img alt="Obrazek v galerii" className="img-responsive" src="/gallery/konec_prazdnin_2017/7.jpg"/>
-                    </div>
-                    <div className="col-lg-6 col-xs-12">
-                        <img alt="Obrazek v galerii" className="img-responsive" src="/gallery/konec_prazdnin_2017/8.jpg"/>
-                    </div>
-                    <div className="col-lg-6 col-xs-12">
-                        <img alt="Obrazek v galerii" className="img-responsive" src="/gallery/konec_prazdnin_2017/9.jpg"/>
-                    </div>
-                    <div className="col-lg-6 col-xs-12">
-                        <img alt="Obrazek v galerii" className="img-responsive" src="/gallery/konec_prazdnin_2017/10.jpg"/>
-                    </div>
-                </div>
+                <Gallery srcs={this.gallery}/>
             </>
         )
     }

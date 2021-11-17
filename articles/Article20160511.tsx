@@ -1,4 +1,5 @@
 import {Article} from "./Article";
+import {Gallery} from "../components/Gallery/Gallery";
 
 export class Article20160511 extends Article {
 
@@ -18,43 +19,26 @@ export class Article20160511 extends Article {
         return "Dne 7. května se v naši obci uskutečnil lampionový průvod, který byl ukončený v prostorech hřiště. Hasiči zde zajišťovali občerstvení a také postavení vatry, která byla zapálena něco po 19. hodině."
     }
 
+    gallery: Array<string> = [
+        "/gallery/lampionovy_pruvod_2016/1.jpg",
+        "/gallery/lampionovy_pruvod_2016/2.jpg",
+        "/gallery/lampionovy_pruvod_2016/3.jpg",
+        "/gallery/lampionovy_pruvod_2016/4.jpg",
+        "/gallery/lampionovy_pruvod_2016/5.jpg",
+        "/gallery/lampionovy_pruvod_2016/6.jpg",
+        "/gallery/lampionovy_pruvod_2016/7.jpg",
+        "/gallery/lampionovy_pruvod_2016/8.jpg",
+    ]
+
     getContent(): JSX.Element {
         return (
             <>
                 <p>Dne 7. května se v naši obci uskutečnil lampionový průvod, který byl ukončený v prostorech hřiště. Hasiči zde
                     zajišťovali občerstvení a také postavení vatry, která byla zapálena něco po 7. hodině. Největší radost však měli
-                    děti z nové trampolíny.</p>
+                    děti z nové trampolíny.
+                </p>
 
-                <div className="clear"></div>
-
-                <h2>Galerie:</h2>
-                <div className="gallery">
-                    <div className="col-lg-6 col-xs-12">
-                        <img alt="Obrazek v galerii" className="img-responsive" src="/gallery/lampionovy_pruvod_2016/1.jpg"/>
-                    </div>
-                    <div className="col-lg-6 col-xs-12">
-                        <img alt="Obrazek v galerii" className="img-responsive" src="/gallery/lampionovy_pruvod_2016/2.jpg"/>
-                    </div>
-                    <div className="col-lg-6 col-xs-12">
-                        <img alt="Obrazek v galerii" className="img-responsive" src="/gallery/lampionovy_pruvod_2016/3.jpg"/>
-                    </div>
-                    <div className="col-lg-6 col-xs-12">
-                        <img alt="Obrazek v galerii" className="img-responsive" src="/gallery/lampionovy_pruvod_2016/4.jpg"/>
-                    </div>
-                    <div className="col-lg-6 col-xs-12">
-                        <img alt="Obrazek v galerii" className="img-responsive" src="/gallery/lampionovy_pruvod_2016/5.jpg"/>
-                    </div>
-                    <div className="col-lg-6 col-xs-12">
-                        <img alt="Obrazek v galerii" className="img-responsive" src="/gallery/lampionovy_pruvod_2016/6.jpg"/>
-                    </div>
-                    <div className="col-lg-6 col-xs-12">
-                        <img alt="Obrazek v galerii" className="img-responsive" src="/gallery/lampionovy_pruvod_2016/7.jpg"/>
-                    </div>
-                    <div className="col-lg-6 col-xs-12">
-                        <img alt="Obrazek v galerii" className="img-responsive" src="/gallery/lampionovy_pruvod_2016/8.jpg"/>
-                    </div>
-                </div>
-
+                <Gallery srcs={this.gallery}/>
             </>
         )
     }

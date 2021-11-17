@@ -20,7 +20,7 @@ const ArticleListPage = (props: Props) => {
 
     return (
         <>
-            <Row>
+            <Row className={'articleList'}>
                 <Col lg={10}>
                     <h1>Novinky</h1>
                     <div>

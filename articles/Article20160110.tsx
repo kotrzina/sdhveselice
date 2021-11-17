@@ -28,8 +28,8 @@ export class Article20160110 extends Article {
                     jako rozloučení s prázdninami nebo pořádání pravidelného výběhu naší rozhledny. Výroční valné hromady se
                     zúčastnilo celkem 21 členů a 9 hostů. Všem zúčastněným byly na závěr schůze zobrazeny historické fotografie,
                     fotografie pořízené za poslední dva roky a celá řada videí prezentující odvedenou práci sboru, především videa z
-                    pravidelného běžeckého závodu <a href="http://lesempolem.cz/" target="_blank">LESEMPOLEM</a>.</p>
-                <br/>
+                    pravidelného běžeckého závodu <a href="http://lesempolem.cz/" target="_blank">LESEMPOLEM</a>.
+                </p>
 
                 <p>
                     <a className="btn btn-danger" href="/vyrocni_zpravy/zprava_2015.pdf">Stahujte kompletní zprávu ve formátu PDF</a>

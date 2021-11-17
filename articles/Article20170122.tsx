@@ -1,4 +1,5 @@
 import {Article} from "./Article";
+import {Gallery} from "../components/Gallery/Gallery";
 
 export class Article20170122 extends Article {
 
@@ -18,36 +19,25 @@ export class Article20170122 extends Article {
         return "Dne 30. prosince 2016 se na svazarmu uskutečnil 1. veselský wellness. Akce odstartovala v 17:00 na rozhledně."
     }
 
+    gallery: Array<string> = [
+        "/gallery/wellness/3.jpg",
+        "/gallery/wellness/4.jpg",
+        "/gallery/wellness/5.jpg",
+        "/gallery/wellness/6.jpg",
+        "/gallery/wellness/1.jpg",
+        "/gallery/wellness/2.jpg",
+    ]
+
     getContent(): JSX.Element {
         return (
             <>
                 <p>Dne 30. prosince 2016 se na svazarmu uskutečnil 1. veselský wellness. Akce odstartovala v 17:00 na rozhledně, kde
                     byl připraven soutěžní výběh a seskok z rozhledny do připraveného bazénu. Na svazarmu se mezitím připravila voda
                     do bazénu, která dosahovala až 40 °C. Venkovní teplota se pohybovala kolem -5 °C. Pro odvážné byl připraven i
-                    bezén se studenou vodou.</p>
-                <div className="clear"></div>
+                    bezén se studenou vodou.
+                </p>
 
-                <h2>Galerie:</h2>
-                <div className="gallery">
-                    <div className="col-lg-6 col-xs-12">
-                        <img alt="Obrazek v galerii" className="img-responsive" src="/gallery/wellness/1.jpg"/>
-                    </div>
-                    <div className="col-lg-6 col-xs-12">
-                        <img alt="Obrazek v galerii" className="img-responsive" src="/gallery/wellness/2.jpg"/>
-                    </div>
-                    <div className="col-lg-6 col-xs-12">
-                        <img alt="Obrazek v galerii" className="img-responsive" src="/gallery/wellness/3.jpg"/>
-                    </div>
-                    <div className="col-lg-6 col-xs-12">
-                        <img alt="Obrazek v galerii" className="img-responsive" src="/gallery/wellness/4.jpg"/>
-                    </div>
-                    <div className="col-lg-6 col-xs-12">
-                        <img alt="Obrazek v galerii" className="img-responsive" src="/gallery/wellness/5.jpg"/>
-                    </div>
-                    <div className="col-lg-6 col-xs-12">
-                        <img alt="Obrazek v galerii" className="img-responsive" src="/gallery/wellness/6.jpg"/>
-                    </div>
-                </div>
+                <Gallery srcs={this.gallery}/>
             </>
         )
     }

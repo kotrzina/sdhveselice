@@ -1,4 +1,5 @@
 import {Article} from "./Article";
+import {Gallery} from "../components/Gallery/Gallery";
 
 export class Article20150621 extends Article {
 
@@ -18,6 +19,14 @@ export class Article20150621 extends Article {
         return "Ve dnech od 12. do 14. června se ve Veselici uskutečnila Svatoantonínská pouť, kterou již po několikáté pořádali dobrovolní hasiči."
     }
 
+    gallery: Array<string> = [
+        "/gallery/pout_2015/1.jpg",
+        "/gallery/pout_2015/2.jpg",
+        "/gallery/pout_2015/3.jpg",
+        "/gallery/pout_2015/4.jpg",
+        "/gallery/pout_2015/5.jpg",
+    ]
+
     getContent(): JSX.Element {
         return (
             <>
@@ -28,26 +37,7 @@ export class Article20150621 extends Article {
                     TRI KENT, která přilákala cca 80 příchozích a bavila je až do ranních hodin. Neděle již tradičně probíhala ve
                     znamení pohodového posezení u dobrého jídla a pití.</p>
 
-
-                <div className="clear"></div>
-                <h2>Galerie:</h2>
-                <div className="gallery">
-                    <div className="col-lg-6 col-xs-12">
-                        <img alt="Obrazek v galerii" className="img-responsive" src="/gallery/pout_2015/1.jpg"/>
-                    </div>
-                    <div className="col-lg-6 col-xs-12">
-                        <img alt="Obrazek v galerii" className="img-responsive" src="/gallery/pout_2015/2.jpg"/>
-                    </div>
-                    <div className="col-lg-6 col-xs-12">
-                        <img alt="Obrazek v galerii" className="img-responsive" src="/gallery/pout_2015/3.jpg"/>
-                    </div>
-                    <div className="col-lg-6 col-xs-12">
-                        <img alt="Obrazek v galerii" className="img-responsive" src="/gallery/pout_2015/4.jpg"/>
-                    </div>
-                    <div className="col-lg-6 col-xs-12">
-                        <img alt="Obrazek v galerii" className="img-responsive" src="/gallery/pout_2015/5.jpg"/>
-                    </div>
-                </div>
+                <Gallery srcs={this.gallery}/>
             </>
         )
     }

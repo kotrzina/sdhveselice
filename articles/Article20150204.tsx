@@ -23,8 +23,9 @@ export class Article20150204 extends Article {
             <>
                 <p>SDH Veselice a OS Veselická kaplička vás všechny zve v sobotu <strong>14. února</strong> do masopustního průvodu
                     ve Veselici. Sraz ve <strong>12:30</strong> u kapličky. Po skončení průvodu je připraven program jak pro malé,
-                    tak i velké účastníky!</p>
-                <div className="clear"></div>
+                    tak i velké účastníky!
+                </p>
+
                 <img width="100%" src="/articles/pozvanka-ostatky-2015.png" alt="Pozvánka na ostatky"/>
             </>
         )

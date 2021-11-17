@@ -27,15 +27,17 @@ export class Article20150604 extends Article {
                         href="http://lesempolem.cz" target="_blank">www.lesempolem.cz</a>. V sobotu večer k nám dorazí kapela
                     TRIO KENT, která bude hrát k poslechu i tanci. K neděli tradičně patří příjemné posezení, dobré jídlo a pití. A
                     v pondělí samozřejmě dozvuky. Všichni jste srdečně zváni!
-                    <br/>
-                    <a title="Akce na facebooku" href="https://www.facebook.com/events/1314269458588593/?active_tab=highlights"
+                </p>
+
+                <p>
+                    <a className={'btn btn-danger'} title="Akce na facebooku" href="https://www.facebook.com/events/1314269458588593/?active_tab=highlights"
                        target="_blank">Akce na Facebooku
                     </a>
                 </p>
 
-                <div className="clear"></div>
-                <br/>
-                <img width="100%" src="/articles/plakat-pout-2015.png" alt="Pozvánka na Pouť"/>
+                <p>
+                    <img width="100%" src="/articles/plakat-pout-2015.png" alt="Pozvánka na Pouť"/>
+                </p>
 
 
             </>
