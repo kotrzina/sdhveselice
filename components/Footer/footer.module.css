@@ -13,11 +13,11 @@
     list-style: none;
 }
 
-.footer ul li a {
+.footer a {
     color: #ffdbc7;
 }
 
-.footer ul li a:hover {
+.footer a:hover {
     color: #eee;
 }
 
