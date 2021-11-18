@@ -6,6 +6,8 @@ import {Link, LinkList} from './LinkList';
 
 export const Footer = () => {
 
+    const sdhEmail = 'info@sdhveselice.cz'
+
     function usefulLinks(): Array<Link> {
         return [
             {title: 'Běžecké závody Lesempolem', href: 'https://lesempolem.cz'},
@@ -36,9 +38,7 @@ export const Footer = () => {
                             <p>
                                 Sbor dobrovolných hasičů Veselice
                                 <br/>
-                                starosta: <a href={'mailto:lubanemec88@gmail.com'}>Lubomír Němec</a>
-                                <br/>
-                                web: <a href={'mailto:kozak@talko.cz'}>Tomáš Kozák</a>
+                                email: <a href={'mailto:' + sdhEmail}>{sdhEmail}</a>
                                 <br/>
                                 &copy; SDH Veselice 1921 - {getYear()}
                             </p>

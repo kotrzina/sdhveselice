@@ -29,6 +29,7 @@ const ContactPage = () => {
         }
     ]
 
+    const sdhEmail = 'info@sdhveselice.cz'
 
     return (
         <Row>
@@ -52,7 +53,8 @@ const ContactPage = () => {
                     SH ČMS - Sbor dobrovolných hasičů Veselice<br/>
                     IČO: 65339851<br/>
                     Veselice 24<br/>
-                    679 13
+                    679 13 <br/><br/>
+                    <EmailIcon/>&nbsp;&nbsp;<a href={'mailto:' + sdhEmail}>{sdhEmail}</a><br/>
                 </p>
             </Col>
         </Row>
