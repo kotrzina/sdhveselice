@@ -50,7 +50,7 @@ const ArticleListPage = (props: Props) => {
             </Row>
             <Row>
                 <Col lg={12}>
-                    <Pagination>
+                    <Pagination id={'pag'}>
                         {Array.from({length: props.pagesCount}, (v, k) => k + 1).map(ia => {
                             return (
                                 <Link key={ia} href={'/novinky/' + ia} passHref>

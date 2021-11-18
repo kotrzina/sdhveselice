@@ -80,3 +80,15 @@ a:hover {
     margin: 5px 5px;
     border: 3px #c45640 solid;
 }
+
+#pag li a {
+    color: #9e4414;
+    background-color: #fff;
+    border: 1px solid #9e4414;
+}
+
+#pag li span, #pag li a:hover {
+    color: #FFF;
+    background-color: #9e4414;
+    border: 1px solid #9e4414;
+}
