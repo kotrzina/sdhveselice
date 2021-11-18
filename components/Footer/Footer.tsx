@@ -3,25 +3,20 @@ import {Col, Container, Row} from "react-bootstrap";
 import footerStyles from "./footer.module.css"
 import {Link, LinkList} from './LinkList';
 
-
 export const Footer = () => {
 
     const sdhEmail = 'info@sdhveselice.cz'
 
-    function usefulLinks(): Array<Link> {
-        return [
-            {title: 'Běžecké závody Lesempolem', href: 'https://lesempolem.cz'},
-            {title: 'Obec Vavřinec', href: 'https://vavrinec.cz'},
-            {title: 'Zdrojové kody - Github', href: 'https://github.com/kotrzina/sdhveselice'},
-        ]
-    }
+    const usefulLinks: Array<Link> = [
+        {title: 'Běžecké závody Lesempolem', href: 'https://lesempolem.cz'},
+        {title: 'Obec Vavřinec', href: 'https://vavrinec.cz'},
+        {title: 'Zdrojové kody - Github', href: 'https://github.com/kotrzina/sdhveselice'},
+    ]
 
-    function nearSdh(): Array<Link> {
-        return [
-            {title: 'SDH Vavřinec', href: 'http://sdh.vavrinec.cz/'},
-            {title: 'SDH Šošuvka', href: 'http://sdh.sosuvka.cz/'},
-        ]
-    }
+    const nearSdh: Array<Link> = [
+        {title: 'SDH Vavřinec', href: 'http://sdh.vavrinec.cz/'},
+        {title: 'SDH Šošuvka', href: 'http://sdh.sosuvka.cz/'},
+    ]
 
     function getYear(): number {
         const now = new Date()
@@ -45,10 +40,10 @@ export const Footer = () => {
                         </div>
                     </Col>
                     <Col lg={4}>
-                        <LinkList title={'Užitečné odkazy'} links={usefulLinks()}/>
+                        <LinkList title={'Užitečné odkazy'} links={usefulLinks}/>
                     </Col>
                     <Col lg={4}>
-                        <LinkList title={'Sbory v okolí'} links={nearSdh()}/>
+                        <LinkList title={'Sbory v okolí'} links={nearSdh}/>
                     </Col>
                 </Row>
             </Container>
