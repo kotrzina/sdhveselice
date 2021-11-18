@@ -1,4 +1,5 @@
 import {Article} from "./Article";
+import {Article20190106} from "./Article20190106";
 import {Article20180620} from "./Article20180620";
 import {Article20180526} from "./Article20180526";
 import {Article20180225} from "./Article20180225";
@@ -49,9 +50,12 @@ import {Article20130704} from "./Article20130704";
 import {Article20130703} from "./Article20130703";
 import {Article20130702} from "./Article20130702";
 import {Article20130701} from "./Article20130701";
+import {Article20190625} from "./Article20190625";
 
 const ArticleList: Array<Article> = [
     // add new article here
+    new Article20190625(),
+    new Article20190106(),
     new Article20180620(),
     new Article20180526(),
     new Article20180225(),
