@@ -31,7 +31,7 @@ const ArticleListPage = (props: Props) => {
                                         <Col lg={4}>
                                             <Link href={getArticleLink(article)} passHref>
                                                 <a>
-                                                    <Image alt={"Ilustrační obrázek pro " + article.getTitle()} src={article.getImage()} thumbnail/>
+                                                    <Image alt={"Ilustrační obrázek pro " + article.getTitle()} src={article.getImage()} thumbnail width={"100%"}/>
                                                 </a>
                                             </Link>
                                         </Col>
