@@ -46,14 +46,14 @@ export async function getStaticProps(context: GetStaticPropsContext): Promise<Ge
         props: {
             members: [
                 {name: "Němec Lubomír", func: "Starosta", born: 1988},
-                {name: "Novotný Miloslav", func: "Náměstek starosty:", born: 1956},
+                {name: "Fabiánek Jiří", func: "Náměstek starosty:", born: 1992},
                 {name: "Kozák Tomáš", func: "Jednatel", born: 1991},
                 {name: "Fabiánek Milan", func: "Hospodář", born: 1969},
                 {name: "Jarůšek Marek", func: "Velitel", born: 1978},
                 {name: "Nečas Martin", func: "Člen výboru", born: 1987},
                 {name: "Nečas Bohumil", func: "Člen výboru", born: 1977},
                 {name: "Fabiánek Jan", func: "Člen výboru", born: 1991},
-                {name: "Souček Pavel", func: "Člen výboru", born: 1958},
+                {name: "Fabiánek Filip", func: "Člen výboru", born: 1997},
             ]
         },
     }
