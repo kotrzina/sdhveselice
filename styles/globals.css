@@ -92,3 +92,7 @@ a:hover {
     background-color: #9e4414;
     border: 1px solid #9e4414;
 }
+
+ul, ol {
+    padding-left: 13px;
+}
