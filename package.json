@@ -10,7 +10,8 @@
     "start:ci": "next build && next export && next start",
     "lint": "next lint",
     "test": "cypress run",
-    "cypress": "cypress open"
+    "cypress": "cypress open",
+    "article": "node createArticle.js"
   },
   "dependencies": {
     "bootstrap": "^5.1",

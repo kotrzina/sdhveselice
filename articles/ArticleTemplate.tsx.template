@@ -1,0 +1,30 @@
+import {Article} from "./Article";
+
+export class Article${YEAR}${MONTH_PAD}${DAY_PAD} extends Article {
+
+    getTitle(): string {
+        return ""
+    }
+
+    getSlug(): string {
+        return ""
+    }
+
+    getImage(): string {
+        return ""
+    }
+
+    getPreheader(): string | null {
+        return ""
+    }
+
+    getContent(): JSX.Element {
+        return (
+            <></>
+        )
+    }
+
+    getPublishDate(): Date {
+        return new Date(${YEAR}, ${MONTH}, ${DAY})
+    }
+}
