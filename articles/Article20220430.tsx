@@ -33,14 +33,15 @@ export class Article20220430 extends Article {
                     závody Lesempolem. Tento rok bude opět v ultramaratonském duchu. Celé to začne od sobotního
                     rána, kde v 7:00 odstartují závodníci na 63km dlouhou trať. Detailní informace včetně registrace je
                     možné
-                    najít na stránkách <a href={"https://lesempolem.cz"} title={"Lesempolem"}>Lesempolem.cz</a>.
+                    najít na stránkách <a href={"https://lesempolem.cz"} title={"Lesempolem"}>lesempolem.cz</a>.
                 </p>
                 <p>
-                    V sobotu kolem 16:00 je v plánu živý rokový koncert se skupinou <a href={"https://www.ravenhard.cz/"}
-                                                                              target={"_blank"}
-                                                                              rel={"noreferrer"}
-                >RAVENHARD-GOTTHARD TRIBUTE BAND</a>.
+                    Od 17:00 je v plánu živý rokový koncert kapely <a href={"https://www.ravenhard.cz/"}
+                                                                      target={"_blank"}
+                                                                      rel={"noreferrer"}
+                ><strong>RAVENHARD-GOTTHARD TRIBUTE BAND</strong></a>.
                 </p>
+                <p>Od 21:00 pouťová zábava se skupinou <strong>Styl</strong>.</p>
                 <p>Neděle bude již tradičně spojena s posezením u dobrého jídla a piva.</p>
                 <Video src={"https://www.youtube.com/embed/XVxalyuB840"} title={"Ukázka z koncertu RAVENHARD"}/>
             </>
