@@ -18,51 +18,47 @@ const ArticleListPage = (props: Props) => {
         return '/clanek/' + article.getSlug()
     }
 
-    return (
-        <>
-            <Row className={'articleList'}>
-                <Col lg={10}>
-                    <h1>Novinky</h1>
-                    <div>
-                        {getArticles().slice((props.page - 1) * itemsPerPage, props.page * itemsPerPage).map((article, k) => {
-                            return (
-                                <div key={k} className={listStyle.article}>
-                                    <Row>
-                                        <Col lg={4}>
-                                            <Link href={getArticleLink(article)} passHref>
-                                                <a>
-                                                    <Image alt={"Ilustrační obrázek pro " + article.getTitle()} src={article.getImage()} thumbnail width={"100%"}/>
-                                                </a>
-                                            </Link>
-                                        </Col>
-                                        <Col lg={8}>
-                                            <Link href={getArticleLink(article)}>
-                                                <a><h2>{article.getTitle()}</h2></a>
-                                            </Link>
-                                            <p>{article.getPreheader()}</p>
-                                        </Col>
-                                    </Row>
-                                </div>
-                            )
-                        })}
-                    </div>
-                </Col>
-            </Row>
-            <Row>
-                <Col lg={12}>
-                    <Pagination id={'pag'}>
-                        {Array.from({length: props.pagesCount}, (v, k) => k + 1).map(ia => {
-                            return (
-                                <Link key={ia} href={'/novinky/' + ia} passHref>
-                                    <Pagination.Item active={ia == props.page}>{ia}</Pagination.Item>
-                                </Link>
-                            )
-                        })}
-                    </Pagination>
-                </Col>
-            </Row>
-        </>
-    );
+    return <>
+        <Row className={'articleList'}>
+            <Col lg={10}>
+                <h1>Novinky</h1>
+                <div>
+                    {getArticles().slice((props.page - 1) * itemsPerPage, props.page * itemsPerPage).map((article, k) => {
+                        return (
+                            <div key={k} className={listStyle.article}>
+                                <Row>
+                                    <Col lg={4}>
+                                        <Link href={getArticleLink(article)} passHref>
+                                            <Image alt={"Ilustrační obrázek pro " + article.getTitle()} src={article.getImage()} thumbnail width={"100%"}/>
+                                        </Link>
+                                    </Col>
+                                    <Col lg={8}>
+                                        <Link href={getArticleLink(article)}>
+                                            <h2>{article.getTitle()}</h2>
+                                        </Link>
+                                        <p>{article.getPreheader()}</p>
+                                    </Col>
+                                </Row>
+                            </div>
+                        );
+                    })}
+                </div>
+            </Col>
+        </Row>
+        <Row>
+            <Col lg={12}>
+                <Pagination id={'pag'}>
+                    {Array.from({length: props.pagesCount}, (v, k) => k + 1).map(ia => {
+                        return (
+                            <Link key={ia} href={'/novinky/' + ia} passHref legacyBehavior>
+                                <Pagination.Item active={ia == props.page}>{ia}</Pagination.Item>
+                            </Link>
+                        );
+                    })}
+                </Pagination>
+            </Col>
+        </Row>
+    </>;
 };
 
 function calculatePagesCount(): number {

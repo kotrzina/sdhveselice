@@ -34,7 +34,7 @@ export const NavItem = (props: Props) => {
     }
 
     return (
-        <Link href={props.link} passHref>
+        <Link href={props.link} passHref legacyBehavior>
             <Nav.Link className={getClassName(props.link)} active={true}>{props.title}</Nav.Link>
         </Link>
     );

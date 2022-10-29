@@ -21,11 +21,11 @@ const Races = () => {
                     {getRacesArticles().map((article, idx) => {
                         return (
                             <li key={idx}>
-                                <Link href={"/clanek/" + article.getSlug()}>
+                                <Link href={"/clanek/" + article.getSlug()} legacyBehavior>
                                     {article.getTitle()}
                                 </Link>
                             </li>
-                        )
+                        );
                     })}
                 </ul>
             </Col>
