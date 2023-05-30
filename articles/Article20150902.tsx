@@ -1,6 +1,7 @@
 import {Article} from "./Article";
 import {Gallery} from "../components/Gallery/Gallery";
 import {Video} from "../components/Video/Video";
+import {ReactElement} from "react";
 
 export class Article20150902 extends Article {
 
@@ -30,7 +31,7 @@ export class Article20150902 extends Article {
         "/gallery/zakonceni_prazdnin_s_orlojem/7.jpg",
     ]
 
-    getContent(): JSX.Element {
+    getContent(): ReactElement {
         return (
             <>
                 <p>V pátek 28. 8. 2015 se za spoluúčasti sdružení Kotržina konalo rozloučení s letními prázdninami. Celá akce

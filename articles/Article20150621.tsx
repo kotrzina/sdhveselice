@@ -1,5 +1,6 @@
 import {Article} from "./Article";
 import {Gallery} from "../components/Gallery/Gallery";
+import {ReactElement} from "react";
 
 export class Article20150621 extends Article {
 
@@ -27,7 +28,7 @@ export class Article20150621 extends Article {
         "/gallery/pout_2015/5.jpg",
     ]
 
-    getContent(): JSX.Element {
+    getContent(): ReactElement {
         return (
             <>
                 <p>Ve dnech od 12. do 14. června se ve Veselici uskutečnila Svatoantonínská pouť, kterou již po několikáté pořádali

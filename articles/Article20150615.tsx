@@ -1,5 +1,6 @@
 import {Article} from "./Article";
 import {Gallery} from "../components/Gallery/Gallery";
+import {ReactElement} from "react";
 
 export class Article20150615 extends Article {
 
@@ -27,7 +28,7 @@ export class Article20150615 extends Article {
         "/gallery/lesempolem_2015/5.jpg",
     ]
 
-    getContent(): JSX.Element {
+    getContent(): ReactElement {
         return (
             <>
                 <p>Stalo se již tradicí, že se hasiči z Veselice podílí na pořádání běžeckých závodů Lesempolem, které se konají na

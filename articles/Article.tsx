@@ -1,3 +1,6 @@
+import {ReactElement} from "react";
+import {ReactElement} from "react";
+
 export abstract class Article {
     abstract getTitle(): string;
 
@@ -7,7 +10,7 @@ export abstract class Article {
 
     abstract getPreheader(): string | null;
 
-    abstract getContent(): JSX.Element;
+    abstract getContent(): ReactElement;
 
     abstract getPublishDate(): Date;
 }

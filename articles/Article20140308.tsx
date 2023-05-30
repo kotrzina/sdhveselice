@@ -1,4 +1,5 @@
 import {Article} from "./Article";
+import {ReactElement} from "react";
 
 export class Article20140308 extends Article {
 
@@ -18,7 +19,7 @@ export class Article20140308 extends Article {
         return "V lednu roku 2013 se ve Veselici uskutečnila schůze, na které se rekapitulovalo vše podstatné, co se ve sboru dobrovolných hasičů v roce 2012 stalo. Součástí schůze byly i návrh činnostní pro rok 2013."
     }
 
-    getContent(): JSX.Element {
+    getContent(): ReactElement {
         return (
             <>
                 <p>V lednu roku 2013 se ve Veselici uskutečnila schůze, na které se rekapitulovalo vše podstatné, co se ve sboru

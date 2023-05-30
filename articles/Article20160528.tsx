@@ -1,4 +1,5 @@
 import {Article} from "./Article";
+import {ReactElement} from "react";
 
 export class Article20160528 extends Article {
 
@@ -18,7 +19,7 @@ export class Article20160528 extends Article {
         return "Dne 21. května se na polním letišti v Petrocicích uskutečnilo 1. kolo požárního sportu okrsku Sloup. Veselské družstvo zde mělo zastoupení pouze v kategorii mužů do 35 let."
     }
 
-    getContent(): JSX.Element {
+    getContent(): ReactElement {
         return (
             <>
                 <p>Dne 21. května se na polním letišti v Petrocicích uskutečnilo 1. kolo požárního sportu okrsku Sloup. Veselské

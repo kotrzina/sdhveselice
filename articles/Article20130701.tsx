@@ -1,4 +1,5 @@
 import {Article} from "./Article";
+import {ReactElement} from "react";
 
 export class Article20130701 extends Article {
 
@@ -18,7 +19,7 @@ export class Article20130701 extends Article {
         return ""
     }
 
-    getContent(): JSX.Element {
+    getContent(): ReactElement {
         return (
             <>
                 <p>Na této stránce lze najít výsledky ze závodů ve Veselici od roku 2006 do roku 2010. Některé ročníky jsou

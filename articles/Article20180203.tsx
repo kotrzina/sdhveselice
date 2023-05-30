@@ -1,5 +1,6 @@
 import {Article} from "./Article";
 import {Video} from "../components/Video/Video";
+import {ReactElement} from "react";
 
 export class Article20180203 extends Article {
 
@@ -19,7 +20,7 @@ export class Article20180203 extends Article {
         return "Dne 6. ledna 2018 se v místní víceúčelové budově uskutečnila valná hromada SDH Veselice."
     }
 
-    getContent(): JSX.Element {
+    getContent(): ReactElement {
         return (
             <>
                 <p>

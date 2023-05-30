@@ -1,6 +1,7 @@
 import {Article} from "./Article";
 import {Table} from "react-bootstrap";
 import {Video} from "../components/Video/Video";
+import {ReactElement} from "react";
 
 export class Article20180526 extends Article {
     getTitle(): string {
@@ -19,7 +20,7 @@ export class Article20180526 extends Article {
         return "Dne 26. května 2018 se ve sportovním areálu ve Vavřinci uskutečnilo 1. kolo požárního sportu okrsku Sloup.";
     }
 
-    getContent(): JSX.Element {
+    getContent(): ReactElement {
         return (
             <>
                 <p>Dne 26. května 2018 se ve sportovním areálu ve Vavřinci uskutečnilo 1. kolo požárního sportu okrsku Sloup. Veselské družstvo zde mělo zastoupení

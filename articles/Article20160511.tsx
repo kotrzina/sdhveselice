@@ -1,5 +1,6 @@
 import {Article} from "./Article";
 import {Gallery} from "../components/Gallery/Gallery";
+import {ReactElement} from "react";
 
 export class Article20160511 extends Article {
 
@@ -30,7 +31,7 @@ export class Article20160511 extends Article {
         "/gallery/lampionovy_pruvod_2016/8.jpg",
     ]
 
-    getContent(): JSX.Element {
+    getContent(): ReactElement {
         return (
             <>
                 <p>Dne 7. května se v naši obci uskutečnil lampionový průvod, který byl ukončený v prostorech hřiště. Hasiči zde

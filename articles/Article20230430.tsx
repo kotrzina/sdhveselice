@@ -1,5 +1,6 @@
 import {Article} from "./Article";
 import {Video} from "../components/Video/Video";
+import {ReactElement} from "react";
 
 export class Article20230430 extends Article {
 
@@ -23,7 +24,7 @@ export class Article20230430 extends Article {
         return "Už 10. června se můžete těšit na tradiční pouť a běžecké závody Lesempolem. Startujeme už v 7:00."
     }
 
-    getContent(): JSX.Element {
+    getContent(): ReactElement {
         return (
             <>
                 <p>

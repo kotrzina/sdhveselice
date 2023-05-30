@@ -1,5 +1,6 @@
 import {Article} from "./Article";
 import {Gallery} from "../components/Gallery/Gallery";
+import {ReactElement} from "react";
 
 export class Article20150901 extends Article {
 
@@ -28,7 +29,7 @@ export class Article20150901 extends Article {
         "/gallery/pozar_v_suchdole/6.jpg",
     ]
 
-    getContent(): JSX.Element {
+    getContent(): ReactElement {
         return (
             <>
                 <p>V dnech 8. a 9. srpna 2015 naše jednotka vyjela k požáru trávy do Suchdolu. Hořela zahrada nad autobusovou

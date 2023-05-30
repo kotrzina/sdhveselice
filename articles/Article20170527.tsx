@@ -1,5 +1,6 @@
 import {Article} from "./Article";
 import {Video} from "../components/Video/Video";
+import {ReactElement} from "react";
 
 export class Article20170527 extends Article {
 
@@ -19,7 +20,7 @@ export class Article20170527 extends Article {
         return "Dne 27. května se ve sportovním areálu ve Vavřinci uskutečnilo 1. kolo požárního sportu okrsku Sloup. Veselské družstvo zde mělo zastoupení pouze v kategorii mužů do 35 let."
     }
 
-    getContent(): JSX.Element {
+    getContent(): ReactElement {
         return (
             <>
                 <p>Dne 27. května se ve sportovním areálu ve Vavřinci uskutečnilo 1. kolo požárního sportu okrsku Sloup. Veselské

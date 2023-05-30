@@ -1,4 +1,5 @@
 import {Article} from "./Article";
+import {ReactElement} from "react";
 
 export class Article20160223 extends Article {
 
@@ -18,7 +19,7 @@ export class Article20160223 extends Article {
         return "Letošní běžecké závody Lesempolem se výjimečně neuskuteční o víkendu společně s pouťovými oslavami, ale o týden později, tedy 18. 6. 2016."
     }
 
-    getContent(): JSX.Element {
+    getContent(): ReactElement {
         return (
             <>
                 <p>Letošní běžecké závody <strong>Lesempolem</strong> se výjimečně neuskuteční o víkendu společně s pouťovými

@@ -1,4 +1,5 @@
 import {Article} from "./Article";
+import {ReactElement} from "react";
 
 export class Article20170212 extends Article {
 
@@ -18,7 +19,7 @@ export class Article20170212 extends Article {
         return "SDH Veselice a sdružení VESELICKÁ KAPLIČKA vás zvou na ostatkový průvod obcí, který se uskuteční v sobotu 25. 2. 2017. Sraz masek je ve 12:30 u staré hasičské zbrojnice."
     }
 
-    getContent(): JSX.Element {
+    getContent(): ReactElement {
         return (
             <>
                 <p>SDH Veselice a sdružení VESELICKÁ KAPLIČKA vás zvou na ostatkový průvod obcí, který se uskuteční v sobotu 25. 2.

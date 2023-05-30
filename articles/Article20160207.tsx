@@ -1,4 +1,5 @@
 import {Article} from "./Article";
+import {ReactElement} from "react";
 
 export class Article20160207 extends Article {
 
@@ -18,7 +19,7 @@ export class Article20160207 extends Article {
         return "Dne 6. 2. 2016 se v naši obci uskutečnil tradiční ostatkový průvod, kterého se zúčastnilo kolem 20 masek. Celá akce odstartovala ve 13:00 od bývalé hasičky."
     }
 
-    getContent(): JSX.Element {
+    getContent(): ReactElement {
         return (
             <>
                 <p>Dne 6. 2. 2016 se v naši obci uskutečnil tradiční ostatkový průvod, kterého se zúčastnilo kolem 20 masek. Celá

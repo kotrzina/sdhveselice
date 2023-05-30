@@ -1,6 +1,7 @@
 import {Article} from "./Article";
 import {Video} from "../components/Video/Video";
 import {Gallery} from "../components/Gallery/Gallery";
+import {ReactElement} from "react";
 
 export class Article20170225 extends Article {
 
@@ -29,7 +30,7 @@ export class Article20170225 extends Article {
         "/gallery/ostatky_2017/6.jpg",
     ]
 
-    getContent(): JSX.Element {
+    getContent(): ReactElement {
         return (
             <>
                 <p>V sobotu 25. 2. 2017 se Veselici konal tradiční ostatkový průvod. Sraz masek byl jako každý rok ve 12:30 u staré

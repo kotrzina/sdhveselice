@@ -1,5 +1,6 @@
 import {Article} from "./Article";
 import {Gallery} from "../components/Gallery/Gallery";
+import {ReactElement} from "react";
 
 export class Article20160719 extends Article {
 
@@ -31,7 +32,7 @@ export class Article20160719 extends Article {
         "/gallery/pout_2016/9.JPG",
     ]
 
-    getContent(): JSX.Element {
+    getContent(): ReactElement {
         return (
             <>
                 <p>O víkendu od 10. do 13. 6. se u nás v obci uskutečnila pod naší záštitou tradiční pouť. Program pouti začal již v

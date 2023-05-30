@@ -1,5 +1,6 @@
 import {Article} from "./Article";
 import {Gallery} from "../components/Gallery/Gallery";
+import {ReactElement} from "react";
 
 export class Article20170122 extends Article {
 
@@ -28,7 +29,7 @@ export class Article20170122 extends Article {
         "/gallery/wellness/2.jpg",
     ]
 
-    getContent(): JSX.Element {
+    getContent(): ReactElement {
         return (
             <>
                 <p>Dne 30. prosince 2016 se na svazarmu uskutečnil 1. veselský wellness. Akce odstartovala v 17:00 na rozhledně, kde

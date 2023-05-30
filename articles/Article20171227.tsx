@@ -1,4 +1,5 @@
 import {Article} from "./Article";
+import {ReactElement} from "react";
 
 export class Article20171227 extends Article {
 
@@ -18,7 +19,7 @@ export class Article20171227 extends Article {
         return "SDH Veselice zve všechny své členy a příznivce na VALNOU HROMADU, která se koná 6. ledna 2018 v 18:00 v sále kulturního domu."
     }
 
-    getContent(): JSX.Element {
+    getContent(): ReactElement {
         return (
             <>
                 <p>SDH Veselice zve všechny své členy a příznivce na VALNOU HROMADU, která se koná 6. ledna 2018 v 18:00 v sále

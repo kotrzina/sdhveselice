@@ -1,5 +1,6 @@
 import {Article} from "./Article";
 import {Gallery} from "../components/Gallery/Gallery";
+import {ReactElement} from "react";
 
 export class Article20210612 extends Article {
 
@@ -28,7 +29,7 @@ export class Article20210612 extends Article {
         "/gallery/lesempolem_2021/6.jpg",
     ]
 
-    getContent(): JSX.Element {
+    getContent(): ReactElement {
         return (
             <>
                 <p>

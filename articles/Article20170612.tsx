@@ -1,6 +1,7 @@
 import {Article} from "./Article";
 import {Video} from "../components/Video/Video";
 import {Gallery} from "../components/Gallery/Gallery";
+import {ReactElement} from "react";
 
 export class Article20170612 extends Article {
 
@@ -33,7 +34,7 @@ export class Article20170612 extends Article {
         "/gallery/pout_2017/10.jpg",
     ]
 
-    getContent(): JSX.Element {
+    getContent(): ReactElement {
         return (
             <>
                 <p>Ve dnech od 10. do 12. června 2017 se v místním sportovním areálu uskutečnila svatoantonínská pouť a běžecké

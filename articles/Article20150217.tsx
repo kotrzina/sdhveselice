@@ -1,5 +1,6 @@
 import {Article} from "./Article";
 import {Gallery} from "../components/Gallery/Gallery";
+import {ReactElement} from "react";
 
 export class Article20150217 extends Article {
 
@@ -37,7 +38,7 @@ export class Article20150217 extends Article {
         "/gallery/ostatky_2015/15.jpg",
     ]
 
-    getContent(): JSX.Element {
+    getContent(): ReactElement {
         return (
             <>
                 Dne 14. 2. 2015 se ve Veselici uskutečnil tradiční ostatkový průvod obcí. Celé akce se zúčastnilo asi 15 masek. Celé akci nechyběla

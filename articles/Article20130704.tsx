@@ -1,4 +1,5 @@
 import {Article} from "./Article";
+import {ReactElement} from "react";
 
 export class Article20130704 extends Article {
 
@@ -18,7 +19,7 @@ export class Article20130704 extends Article {
         return ""
     }
 
-    getContent(): JSX.Element {
+    getContent(): ReactElement {
         return (
             <>
                 <h2>Muži</h2>

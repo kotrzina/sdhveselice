@@ -1,4 +1,5 @@
 import {Article} from "./Article";
+import {ReactElement} from "react";
 
 export class Article20180620 extends Article {
     getTitle(): string {
@@ -17,7 +18,7 @@ export class Article20180620 extends Article {
         return "Informace o pouti a běžeckých závodech Lesempolem, které se uskutečnili v červnu 2018.";
     }
 
-    getContent(): JSX.Element {
+    getContent(): ReactElement {
         return (
             <>
                 <p>První akcí pouti byl běh Lesempolem, který se konal v sobotu od 8:00. Zúčastnilo se ho celkem 83 dospělých a 81 dětských závodníků. Další

@@ -1,4 +1,5 @@
 import {Article} from "./Article";
+import {ReactElement} from "react";
 
 export class Article20150604 extends Article {
 
@@ -18,7 +19,7 @@ export class Article20150604 extends Article {
         return "Jako každý rok se ve Veselici uskuteční tradiční Svatoantonínská pouť. Tento rok nám to vychází na víkend od 12. do 14. 6."
     }
 
-    getContent(): JSX.Element {
+    getContent(): ReactElement {
         return (
             <>
                 <p>Jako každý rok se ve Veselici uskuteční tradiční Svatoantonínská pouť. Tento rok nám to vychází na víkend od 12.

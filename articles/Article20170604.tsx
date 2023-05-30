@@ -1,5 +1,6 @@
 import {Article} from "./Article";
 import {Video} from "../components/Video/Video";
+import {ReactElement} from "react";
 
 export class Article20170604 extends Article {
 
@@ -19,7 +20,7 @@ export class Article20170604 extends Article {
         return "Dne 4. červen 2017 ve 12:23 byl nahlášen požár nízké budovy v Suchdole. Po příjezdu bylo zjištěno, že hoří místní autobusová zastávka."
     }
 
-    getContent(): JSX.Element {
+    getContent(): ReactElement {
         return (
             <>
                 <p>Dne 4. červen 2017 ve 12:23 byl nahlášen požár nízké budovy v Suchdole. Po příjezdu bylo zjištěno, že hoří místní

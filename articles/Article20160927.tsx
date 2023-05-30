@@ -1,6 +1,7 @@
 import {Article} from "./Article";
 import {Video} from "../components/Video/Video";
 import {Gallery} from "../components/Gallery/Gallery";
+import {ReactElement} from "react";
 
 export class Article20160927 extends Article {
 
@@ -32,7 +33,7 @@ export class Article20160927 extends Article {
         "/gallery/konec_prazdnin_2016/9.jpg",
     ]
 
-    getContent(): JSX.Element {
+    getContent(): ReactElement {
         return (
             <>
                 <p>I tento rok sdružení Kotržina uspořádalo ukončení prázdnin, které se konalo dne 27. 8. v parku pod kulturním

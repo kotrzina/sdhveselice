@@ -1,6 +1,7 @@
 import {Article} from "./Article";
 import {Video} from "../components/Video/Video";
 import {Gallery} from "../components/Gallery/Gallery";
+import {ReactElement} from "react";
 
 export class Article20170826 extends Article {
 
@@ -33,7 +34,7 @@ export class Article20170826 extends Article {
         "/gallery/konec_prazdnin_2017/10.jpg",
     ]
 
-    getContent(): JSX.Element {
+    getContent(): ReactElement {
         return (
             <>
                 <p>Dne 26. 8. 2017 se ve Veselici v areálu u horních vojáků uskutečnilo pod záštitou společenství Kotržina a Pavla

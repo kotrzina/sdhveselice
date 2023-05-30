@@ -1,6 +1,7 @@
 import {Article} from "./Article";
 import {Video} from "../components/Video/Video";
 import {Gallery} from "../components/Gallery/Gallery";
+import {ReactElement} from "react";
 
 export class Article20170506 extends Article {
 
@@ -29,7 +30,7 @@ export class Article20170506 extends Article {
         "/gallery/lampionovy_pruvod_2017/6.jpg",
     ]
 
-    getContent(): JSX.Element {
+    getContent(): ReactElement {
         return (
             <>
                 <p>Dne 6. května 2017 se již podruhé uskutečnil lampionový průvod. Děti již v odpoledních hodinách měli k dispozici
