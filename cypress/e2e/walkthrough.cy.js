@@ -50,6 +50,7 @@ describe('walk', () => {
                     cy.get('h1').then(($h1) => {
                         const t = $h1.text();
                         expect(t.length).to.be.at.least(8)
+                        cy.wait(100)
                     })
                 })
             }
