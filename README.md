@@ -3,7 +3,6 @@
 [![cypress](https://github.com/kotrzina/sdhveselice/actions/workflows/cypress.yml/badge.svg)](https://github.com/kotrzina/sdhveselice/actions/workflows/cypress.yml)
 [![WTFPL](http://www.wtfpl.net/wp-content/uploads/2012/12/wtfpl-badge-4.png)](http://www.wtfpl.net/)
 
-
 Application uses [Next.js](https://nextjs.org/) project.
 
 ## Develop
@@ -30,3 +29,13 @@ Application (branch `main`) is automatically deployed to Cloudflare pages. The l
 here [sdhveselice.pages.dev](https://sdhveselice.pages.dev)
 
 Production uses simple DNS CNAME record.
+
+## Useful commands
+
+#### Convert image to webp
+
+```bash
+# apt install webp
+# brew install webp
+cwebp -q 75 -resize 1280 0 input.jpg -o output.webp
+```
