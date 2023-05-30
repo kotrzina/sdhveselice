@@ -1,5 +1,4 @@
 import {ReactElement} from "react";
-import {ReactElement} from "react";
 
 export abstract class Article {
     abstract getTitle(): string;
