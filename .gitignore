@@ -39,5 +39,4 @@ yarn-error.log*
 .next
 
 /cypress/videos
-/cypress/support
 /cypress/screenshots
