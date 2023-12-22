@@ -52,7 +52,7 @@ const ContactPage = () => {
                 <p className={contactStyles.address}>
                     SH ČMS - Sbor dobrovolných hasičů Veselice<br/>
                     IČO: 65339851<br/>
-                    Veselice 24<br/>
+                    Veselice 17<br/>
                     679 13 <br/><br/>
                     <EmailIcon/>&nbsp;&nbsp;<a href={'mailto:' + sdhEmail}>{sdhEmail}</a><br/>
                 </p>
