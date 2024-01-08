@@ -1,4 +1,3 @@
-import * as React from 'react';
 import {Ratio} from "react-bootstrap";
 
 type Props = {
@@ -14,7 +13,7 @@ export const Video = (props: Props) => {
         <>
             <h2>{title}</h2>
             <Ratio aspectRatio="16x9">
-                <iframe src={src} frameBorder="0" allowFullScreen/>
+                <iframe src={src} allowFullScreen/>
             </Ratio>
         </>
     );
