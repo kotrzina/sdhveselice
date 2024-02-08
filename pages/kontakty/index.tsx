@@ -22,7 +22,13 @@ const ContactPage = () => {
             phone: 728637987,
         },
         {
-            title: "Správa webu",
+            title: "Náměstek starosty",
+            name: "Jiří Fabiánek",
+            email: "fabianek.jiri@seznam.cz",
+            phone: 724794221,
+        },
+        {
+            title: "Správce webu",
             name: "Tomáš Kozák",
             email: "kozak@talko.cz",
             phone: 730996957,
@@ -30,34 +36,53 @@ const ContactPage = () => {
     ]
 
     const sdhEmail = 'info@sdhveselice.cz'
+    const cols = 4
 
     return (
-        <Row>
-            <Col lg={12}>
-                <h1>Kontakty</h1>
+        <>
+            <Row>
+                <Col lg={12}>
+                    <h1>Kontakty</h1>
+                </Col>
+            </Row>
+            <Row>
                 {contacts.map((contact, contactIdx) => {
                     return (
-                        <div key={contactIdx}>
-                            <h2>{contact.title}</h2>
+                        <Col md={4} key={contactIdx}>
+                            <h2 className={contactStyles.name}>{contact.name}</h2>
                             <ul className={contactStyles.contacts}>
-                                <li><PersonIcon/>&nbsp;&nbsp;<strong>{contact.name}</strong></li>
-                                <li><EmailIcon/>&nbsp;&nbsp;<a href={'mailto:' + contact.email}>{contact.email}</a></li>
-                                <li><PhoneIcon/>&nbsp;&nbsp;<a href={'tel:' + contact.phone}>{contact.phone}</a></li>
+                                <li><PersonIcon/>&nbsp;&nbsp;<strong>{contact.title}</strong></li>
+                                <li><EmailIcon/>&nbsp;&nbsp;<a href={'mailto:' + contact.email}>{contact.email}</a>
+                                </li>
+                                <li><PhoneIcon/>&nbsp;&nbsp;<a href={'tel:' + contact.phone}>{contact.phone}</a>
+                                </li>
                             </ul>
-                        </div>
+                        </Col>
                     )
                 })}
-
-                <h2>Adresa:</h2>
-                <p className={contactStyles.address}>
-                    SH ČMS - Sbor dobrovolných hasičů Veselice<br/>
-                    IČO: 65339851<br/>
-                    Veselice 17<br/>
-                    679 13 <br/><br/>
-                    <EmailIcon/>&nbsp;&nbsp;<a href={'mailto:' + sdhEmail}>{sdhEmail}</a><br/>
-                </p>
-            </Col>
-        </Row>
+            </Row>
+            <div className={"mt-4"}></div>
+            <Row>
+                <Col md={5}>
+                    <h2>Adresa</h2>
+                    <p>
+                        <strong>SH ČMS - Sbor dobrovolných hasičů Veselice</strong><br/>
+                        Veselice 17<br/>
+                        679 13 <br/><br/>
+                        IČO: 65339851<br/>
+                        <EmailIcon/>&nbsp;&nbsp;<a href={'mailto:' + sdhEmail}>{sdhEmail}</a><br/>
+                    </p>
+                </Col>
+                <Col md={7}>
+                    <h2>Bankovní spojení</h2>
+                    <p>
+                        <strong>Fio banka, a.s.</strong><br/>
+                        <strong>Číslo účtu:</strong>&nbsp;2000928860&nbsp;/&nbsp;2010<br/>
+                        <strong>IBAN:</strong>&nbsp;CZ18&nbsp;2010&nbsp;0000&nbsp;0020&nbsp;0092&nbsp;8860
+                    </p>
+                </Col>
+            </Row>
+        </>
     );
 };
 

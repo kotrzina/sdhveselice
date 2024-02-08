@@ -1,8 +1,8 @@
 .contacts {
-    padding-left: 10px;
+    padding-left: 0;
     list-style: none;
 }
 
-.address {
-    padding-left: 10px;
+h2.name {
+    font-size: 1.25rem;
 }
