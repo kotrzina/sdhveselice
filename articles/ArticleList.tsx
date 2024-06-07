@@ -61,6 +61,7 @@ import {Article20231210} from "./Article20231210";
 import {Article20240106} from "./Article20240106";
 import {Article20240108} from "./Article20240108";
 import {Article20240606} from "./Article20240606";
+import {Article20240607} from "./Article20240607";
 
 const ArticleList: Array<Article> = [
     // add new article here
@@ -126,6 +127,7 @@ const ArticleList: Array<Article> = [
     new Article20240106(),
     new Article20240108(),
     new Article20240606(),
+    new Article20240607(),
 ]
 
 /**
