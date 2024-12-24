@@ -16,13 +16,13 @@ export class Article20241212 extends Article {
     }
 
     getPreheader(): string | null {
-        return "Valná hromada se ukuteční 11. ledna 2025 od 17:00 v místní víceúčelové budově."
+        return "Valná hromada se ukuteční 11. ledna 2025 od 18:00 v místní víceúčelové budově."
     }
 
     getContent(): ReactElement {
         return (
             <p>
-                Zveme všechny členy a příznivce SDH Veselice na valnou hromadu, která se uskuteční 11. ledna 2025 od 17:00 v místní víceúčelové budově.
+                Zveme všechny členy a příznivce SDH Veselice na valnou hromadu, která se uskuteční 11. ledna 2025 od 18:00 v místní víceúčelové budově.
             </p>
         )
     }
