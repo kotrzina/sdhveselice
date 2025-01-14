@@ -5,6 +5,7 @@ import {Col, Image, Pagination, Row} from 'react-bootstrap';
 import {GetStaticPathsResult, GetStaticPropsContext, GetStaticPropsResult} from "next";
 import listStyle from './pageList.module.css'
 import {Article} from "../../../articles/Article";
+import Head from "next/head";
 
 const itemsPerPage = 10
 
@@ -21,6 +22,9 @@ const ArticleListPage = (props: Props) => {
     return <>
         <Row className={'articleList'}>
             <Col lg={10}>
+                <Head>
+                    <title>Seznam novinek #{props.page} | SDH Veselice</title>
+                </Head>
                 <h1>Novinky</h1>
                 <div>
                     {getArticles().slice((props.page - 1) * itemsPerPage, props.page * itemsPerPage).map((article, k) => {

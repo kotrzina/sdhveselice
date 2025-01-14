@@ -1,6 +1,7 @@
 import * as React from 'react';
 import {GetStaticPropsContext, GetStaticPropsResult} from "next";
 import {Col, Row, Table} from "react-bootstrap";
+import Head from "next/head";
 
 type Member = {
     name: string
@@ -15,6 +16,9 @@ type Props = {
 const BoardPage = (props: Props) => {
     return (
         <Row>
+            <Head>
+                <title>Výbor | SDH Veselice</title>
+            </Head>
             <h1>Výbor SDH Veselice</h1>
 
             <Col lg={8}>

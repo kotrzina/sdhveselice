@@ -2,11 +2,15 @@ import * as React from 'react';
 import {getRacesArticles} from "../../articles/ArticleList";
 import {Col, Row} from "react-bootstrap";
 import Link from "next/link"
+import Head from "next/head";
 
 const Races = () => {
     return (
         <Row>
             <Col lg={12}>
+                <Head>
+                    <title>Závody ve Veselici | SDH Veselice</title>
+                </Head>
 
                 <h1>Závody ve Veselici</h1>
 

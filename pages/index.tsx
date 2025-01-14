@@ -3,6 +3,7 @@ import {Col, Row} from 'react-bootstrap';
 import {ArticleBar} from "../components/ArticleBar/ArticleBar";
 import {GetStaticPropsContext, GetStaticPropsResult} from "next";
 import {getArticles} from "../articles/ArticleList";
+import Head from "next/head";
 
 
 type ArticleListItem = {
@@ -19,6 +20,10 @@ const Home = (props: Props) => {
     return (
         <Row>
             <Col lg={8}>
+                <Head>
+                    <title>SDH Veselice</title>
+                </Head>
+
                 <h1>Domů</h1>
 
                 <p>

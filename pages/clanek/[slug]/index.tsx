@@ -1,6 +1,8 @@
 import {getArticleBySlug, getArticles} from "../../../articles/ArticleList";
 import {GetStaticPathsResult, GetStaticPropsContext, GetStaticPropsResult} from "next";
 import {Col, Row} from "react-bootstrap";
+import Head from "next/head";
+import * as React from "react";
 
 
 type Props = {
@@ -11,6 +13,9 @@ type Props = {
 const ArticlePage = (props: Props) => {
     return (
         <>
+            <Head>
+                <title>{props.title} | SDH Veselice</title>
+            </Head>
             <Row>
                 <Col lg={12}>
                     <h1>{props.title}</h1>

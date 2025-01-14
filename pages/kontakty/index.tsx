@@ -4,6 +4,7 @@ import {EmailIcon} from "../../components/Icons/EmailIcon";
 import {PhoneIcon} from "../../components/Icons/PhoneIcon";
 import {PersonIcon} from "../../components/Icons/PersonIcon";
 import contactStyles from "./contacts.module.css"
+import Head from "next/head";
 
 type Contact = {
     title: string;
@@ -36,10 +37,12 @@ const ContactPage = () => {
     ]
 
     const sdhEmail = 'info@sdhveselice.cz'
-    const cols = 4
 
     return (
         <>
+            <Head>
+                <title>Kontakty | SDH Veselice</title>
+            </Head>
             <Row>
                 <Col lg={12}>
                     <h1>Kontakty</h1>
