@@ -23,7 +23,7 @@ const ArticleListPage = (props: Props) => {
         <Row className={'articleList'}>
             <Col lg={10}>
                 <Head>
-                    <title>Seznam novinek #{props.page} | SDH Veselice</title>
+                    <title>{`Seznam novinek #${props.page} | SDH Veselice`}</title>
                 </Head>
                 <h1>Novinky</h1>
                 <div>

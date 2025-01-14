@@ -14,7 +14,7 @@ const ArticlePage = (props: Props) => {
     return (
         <>
             <Head>
-                <title>{props.title} | SDH Veselice</title>
+                <title>{`${props.title} | SDH Veselice`}</title>
             </Head>
             <Row>
                 <Col lg={12}>
