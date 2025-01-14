@@ -14,7 +14,7 @@ describe('walk', () => {
 
     it('test #1', () => {
         cy.visit('/')
-        cy.get('h1').should('contain.text', 'Domů')
+        cy.get('h1').should('contain.text', 'SDH Veselice')
         cy.get('h2 a').click()
         cy.get('h1').should('contain.text', 'Novinky')
         cy.get('h2').first().click()
