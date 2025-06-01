@@ -38,4 +38,7 @@ Production uses simple DNS CNAME record.
 # apt install webp
 # brew install webp
 cwebp -q 75 -resize 1280 0 input.jpg -o output.webp
+
+# crop image 16:9
+magick input.jpeg -gravity center -crop 16:9 +repage output.jpeg
 ```
