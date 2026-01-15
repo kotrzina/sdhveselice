@@ -161,6 +161,6 @@ export class Article20250531 extends Article {
     }
 
     getPublishDate(): Date {
-        return new Date(2025, 5, 31)
+        return new Date(2025, 4, 31)
     }
 }

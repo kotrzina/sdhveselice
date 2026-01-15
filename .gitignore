@@ -6,6 +6,9 @@
 .pnp.js
 
 # testing
+/current
+
+# testing
 /coverage
 
 # next.js

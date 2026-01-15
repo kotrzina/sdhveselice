@@ -65,6 +65,7 @@ import {Article20240607} from "./Article20240607";
 import {Article20250111} from "./Article20250111";
 import {Article20250510} from "./Article20250510";
 import {Article20250531} from "./Article20250531";
+import {Article20250616} from "./Article20250616";
 
 const ArticleList: Array<Article> = [
     // add new article here
@@ -134,6 +135,7 @@ const ArticleList: Array<Article> = [
     new Article20250111(),
     new Article20250510(),
     new Article20250531(),
+    new Article20250616(),
 ]
 
 /**
