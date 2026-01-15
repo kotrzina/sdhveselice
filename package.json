@@ -8,24 +8,28 @@
     "build": "next build",
     "start": "npx serve@latest out",
     "start:ci": "next build && npx serve@latest out",
-    "lint": "next lint",
+    "lint": "eslint .",
     "test": "cypress run",
     "cypress": "cypress open",
     "article": "node createArticle.js"
   },
   "dependencies": {
-    "bootstrap": "^5.1",
-    "next": "^15.1.4",
-    "react": "^19.0.0",
-    "react-bootstrap": "^2.10.7",
-    "react-dom": "^19.0.0"
+    "bootstrap": "^5.3.8",
+    "next": "^16.1.2",
+    "react": "^19.2.3",
+    "react-bootstrap": "^2.10.10",
+    "react-dom": "^19.2.3"
   },
   "devDependencies": {
-    "@types/node": "^22.10.6",
-    "@types/react": "^19.0.7",
-    "cypress": "^13.17.0",
-    "eslint": "^9.18.0",
-    "eslint-config-next": "^15.1.4",
-    "typescript": "^5.7.3"
+    "@eslint/eslintrc": "^3.3.3",
+    "@next/eslint-plugin-next": "^16.1.2",
+    "@types/node": "^25.0.9",
+    "@types/react": "^19.2.8",
+    "cypress": "^15.9.0",
+    "eslint": "^9.39.2",
+    "eslint-config-next": "^16.1.2",
+    "eslint-plugin-react": "^7.37.5",
+    "eslint-plugin-react-hooks": "^7.0.1",
+    "typescript": "^5.9.3"
   }
 }
