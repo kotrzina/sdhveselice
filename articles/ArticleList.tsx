@@ -1,4 +1,19 @@
 import {Article} from "./Article";
+import {Article20260103} from "./Article20260103";
+import {Article20250616} from "./Article20250616";
+import {Article20250531} from "./Article20250531";
+import {Article20250510} from "./Article20250510";
+import {Article20250111} from "./Article20250111";
+import {Article20240607} from "./Article20240607";
+import {Article20240606} from "./Article20240606";
+import {Article20240108} from "./Article20240108";
+import {Article20240106} from "./Article20240106";
+import {Article20231210} from "./Article20231210";
+import {Article20230430} from "./Article20230430";
+import {Article20230107} from "./Article20230107";
+import {Article20220430} from "./Article20220430";
+import {Article20220108} from "./Article20220108";
+import {Article20210612} from "./Article20210612";
 import {Article20200104} from "./Article20200104";
 import {Article20190625} from "./Article20190625";
 import {Article20190106} from "./Article20190106";
@@ -52,23 +67,24 @@ import {Article20130704} from "./Article20130704";
 import {Article20130703} from "./Article20130703";
 import {Article20130702} from "./Article20130702";
 import {Article20130701} from "./Article20130701";
-import {Article20210612} from "./Article20210612";
-import {Article20220108} from "./Article20220108";
-import {Article20220430} from "./Article20220430";
-import {Article20230107} from "./Article20230107";
-import {Article20230430} from "./Article20230430";
-import {Article20231210} from "./Article20231210";
-import {Article20240106} from "./Article20240106";
-import {Article20240108} from "./Article20240108";
-import {Article20240606} from "./Article20240606";
-import {Article20240607} from "./Article20240607";
-import {Article20250111} from "./Article20250111";
-import {Article20250510} from "./Article20250510";
-import {Article20250531} from "./Article20250531";
-import {Article20250616} from "./Article20250616";
 
 const ArticleList: Array<Article> = [
     // add new article here
+    new Article20260103(),
+    new Article20250616(),
+    new Article20250531(),
+    new Article20250510(),
+    new Article20250111(),
+    new Article20240607(),
+    new Article20240606(),
+    new Article20240108(),
+    new Article20240106(),
+    new Article20231210(),
+    new Article20230430(),
+    new Article20230107(),
+    new Article20220430(),
+    new Article20220108(),
+    new Article20210612(),
     new Article20200104(),
     new Article20190625(),
     new Article20190106(),
@@ -122,20 +138,6 @@ const ArticleList: Array<Article> = [
     new Article20130703(),
     new Article20130702(),
     new Article20130701(),
-    new Article20210612(),
-    new Article20220108(),
-    new Article20220430(),
-    new Article20230107(),
-    new Article20230430(),
-    new Article20231210(),
-    new Article20240106(),
-    new Article20240108(),
-    new Article20240606(),
-    new Article20240607(),
-    new Article20250111(),
-    new Article20250510(),
-    new Article20250531(),
-    new Article20250616(),
 ]
 
 /**
