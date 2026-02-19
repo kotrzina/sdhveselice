@@ -24,15 +24,15 @@ const ContactPage = () => {
         },
         {
             title: "Náměstek starosty",
-            name: "Jiří Fabiánek",
-            email: "fabianek.jiri@seznam.cz",
-            phone: 724794221,
-        },
-        {
-            title: "Správce webu",
             name: "Tomáš Kozák",
             email: "kozak@talko.cz",
             phone: 730996957,
+        },
+        {
+            title: "Hospodář",
+            name: "Jiří Fabiánek",
+            email: "fabianek.jiri@seznam.cz",
+            phone: 724794221,
         }
     ]
 
