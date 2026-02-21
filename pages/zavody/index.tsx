@@ -12,26 +12,28 @@ const Races = () => {
                     <title>Závody ve Veselici | SDH Veselice</title>
                 </Head>
 
-                <h1>Závody ve Veselici</h1>
+                <div className={'contentCard'}>
+                    <h1>Závody ve Veselici</h1>
 
-                <p>
-                    Od roku 1996 do roku 2010 pořádal sbor dobrovolných hasičů z Veselice závody v požárním sportu družstev.
-                    Konkrétní disciplínou byl požární útok.
-                    Některé z ročníků byly dokonce zařazenydo prestižní soutěže Velké ceny Blanenska v požárním útoku.
-                </p>
+                    <p>
+                        Od roku 1996 do roku 2010 pořádal sbor dobrovolných hasičů z Veselice závody v požárním sportu družstev.
+                        Konkrétní disciplínou byl požární útok.
+                        Některé z ročníků byly dokonce zařazenydo prestižní soutěže Velké ceny Blanenska v požárním útoku.
+                    </p>
 
-                <h2>Výsledky jednotlivých ročníků:</h2>
-                <ul>
-                    {getRacesArticles().map((article, idx) => {
-                        return (
-                            <li key={idx}>
-                                <Link href={"/clanek/" + article.getSlug()} legacyBehavior>
-                                    {article.getTitle()}
-                                </Link>
-                            </li>
-                        );
-                    })}
-                </ul>
+                    <h2>Výsledky jednotlivých ročníků:</h2>
+                    <ul>
+                        {getRacesArticles().map((article, idx) => {
+                            return (
+                                <li key={idx}>
+                                    <Link href={"/clanek/" + article.getSlug()} legacyBehavior>
+                                        {article.getTitle()}
+                                    </Link>
+                                </li>
+                            );
+                        })}
+                    </ul>
+                </div>
             </Col>
         </Row>
     );

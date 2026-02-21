@@ -51,15 +51,17 @@ const ContactPage = () => {
             <Row>
                 {contacts.map((contact, contactIdx) => {
                     return (
-                        <Col md={4} key={contactIdx}>
-                            <h2 className={contactStyles.name}>{contact.name}</h2>
-                            <ul className={contactStyles.contacts}>
-                                <li><PersonIcon/>&nbsp;&nbsp;<strong>{contact.title}</strong></li>
-                                <li><EmailIcon/>&nbsp;&nbsp;<a href={'mailto:' + contact.email}>{contact.email}</a>
-                                </li>
-                                <li><PhoneIcon/>&nbsp;&nbsp;<a href={'tel:' + contact.phone}>{contact.phone}</a>
-                                </li>
-                            </ul>
+                        <Col md={4} key={contactIdx} className={contactStyles.contactCol}>
+                            <div className={'contactCard'}>
+                                <h2 className={contactStyles.name}>{contact.name}</h2>
+                                <ul className={contactStyles.contacts}>
+                                    <li><PersonIcon/>&nbsp;&nbsp;<strong>{contact.title}</strong></li>
+                                    <li><EmailIcon/>&nbsp;&nbsp;<a href={'mailto:' + contact.email}>{contact.email}</a>
+                                    </li>
+                                    <li><PhoneIcon/>&nbsp;&nbsp;<a href={'tel:' + contact.phone}>{contact.phone}</a>
+                                    </li>
+                                </ul>
+                            </div>
                         </Col>
                     )
                 })}

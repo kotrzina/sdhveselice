@@ -4,11 +4,15 @@ import '../styles/globals.css'
 import {Container} from "react-bootstrap";
 import {Footer} from "../components/Footer/Footer";
 import {Header} from "../components/Header/Header";
+import Head from "next/head";
 
 
 function MyApp({Component, pageProps}: AppProps) {
     return (
         <>
+            <Head>
+                <meta name="theme-color" content="#8a3815" />
+            </Head>
             <Header/>
             <div className={'main'}>
                 <Container>

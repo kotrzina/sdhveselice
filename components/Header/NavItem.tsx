@@ -13,29 +13,29 @@ export const NavItem = (props: Props) => {
 
     const router = useRouter()
 
-    function getClassName(link: string): string {
+    function isActive(link: string): boolean {
         if (link === router.route) {
-            return css.active
+            return true
         }
-
         if (link.includes('novinky') && router.route.includes('novinky')) {
-            return css.active
+            return true
         }
-
         if (link.includes('novinky') && router.route.includes('clanek')) {
-            return css.active
+            return true
         }
+        return false
+    }
 
+    function getClassName(link: string): string {
         if (link.includes('lesempolem')) {
             return css.lesempolem
         }
-
-        return css.none
+        return ''
     }
 
     return (
         <Link href={props.link} passHref legacyBehavior>
-            <Nav.Link className={getClassName(props.link)} active={true}>{props.title}</Nav.Link>
+            <Nav.Link className={getClassName(props.link)} active={isActive(props.link)}>{props.title}</Nav.Link>
         </Link>
     );
 };

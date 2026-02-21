@@ -3,6 +3,8 @@ import {GetStaticPathsResult, GetStaticPropsContext, GetStaticPropsResult} from 
 import {Col, Row} from "react-bootstrap";
 import Head from "next/head";
 import * as React from "react";
+import {useRef} from "react";
+import Lightbox from "../../../components/Lightbox/Lightbox";
 
 
 type Props = {
@@ -11,6 +13,8 @@ type Props = {
 };
 
 const ArticlePage = (props: Props) => {
+    const contentRef = useRef<HTMLDivElement>(null);
+
     return (
         <>
             <Head>
@@ -22,7 +26,10 @@ const ArticlePage = (props: Props) => {
                 </Col>
             </Row>
             <Row>
-                <Col lg={12} dangerouslySetInnerHTML={{__html: props.content}}/>
+                <Col lg={12}>
+                    <div ref={contentRef} className={'articleContent'} dangerouslySetInnerHTML={{__html: props.content}}/>
+                    <Lightbox containerRef={contentRef}/>
+                </Col>
             </Row>
         </>
     );

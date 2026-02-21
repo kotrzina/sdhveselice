@@ -2,6 +2,24 @@
   https://colors.muz.li/color-palette-generator/e2581d
  */
 
+:root {
+    --color-primary: #b34a1e;
+    --color-primary-dark: #8a3815;
+    --color-primary-light: #e86d3a;
+    --color-accent: #d4602c;
+    --color-heading: #3d2c0a;
+    --color-bg: #f8f7f5;
+    --color-bg-card: #ffffff;
+    --color-text: #333333;
+    --color-border: #e0dcd8;
+    --color-footer-text: #fde8d8;
+    --shadow-sm: 0 1px 3px rgba(0,0,0,0.08);
+    --shadow-md: 0 4px 12px rgba(0,0,0,0.1);
+    --radius-sm: 6px;
+    --radius-md: 10px;
+    --transition: 0.2s ease;
+}
+
 @font-face {
     font-family: 'Roboto';
     font-style: normal;
@@ -25,74 +43,207 @@ body {
     padding: 0;
     margin: 0;
     font-family: 'Roboto', serif;
-    background-color: #9e4414;
+    background-color: var(--color-primary-dark);
 }
 
 .main {
-    padding: 20px 0;
-    background-color: #EEE;
+    padding: 40px 0;
+    background-color: var(--color-bg);
+    min-height: calc(100vh - 60px - 200px);
 }
-
 
 h1 {
     font-size: 1.75rem;
     font-weight: bold;
-    color: #553D00;
+    color: var(--color-heading);
+    letter-spacing: -0.02em;
 }
 
 h2 {
     font-size: 1.45rem;
     font-weight: bold;
-    color: #553D00;
+    color: var(--color-heading);
+    letter-spacing: -0.02em;
 }
 
 h3 {
     font-size: 1.3rem;
     font-weight: bold;
-    color: #553D00;
+    color: var(--color-heading);
+    letter-spacing: -0.02em;
 }
 
 p {
     font-size: 1rem;
     text-align: justify;
+    color: var(--color-text);
+    line-height: 1.7;
 }
 
 a {
-    color: #9E4414;
+    color: var(--color-accent);
     text-decoration: none;
+    transition: color var(--transition);
 }
 
 a:hover {
-    color: #c45640;
+    color: var(--color-primary-light);
 }
 
 * {
     box-sizing: border-box;
 }
 
-.gallery div {
-
-
-}
-
 .gallery img {
     display: block;
     margin: 5px 5px;
-    border: 3px #c45640 solid;
+    border: 2px var(--color-border) solid;
+    border-radius: var(--radius-sm);
+    transition: all var(--transition);
+    cursor: pointer;
+}
+
+.gallery img:hover {
+    transform: scale(1.02);
+    box-shadow: var(--shadow-md);
 }
 
 #pag li a {
-    color: #9e4414;
+    color: var(--color-primary);
     background-color: #fff;
-    border: 1px solid #9e4414;
+    border: 1px solid var(--color-primary);
+    border-radius: var(--radius-sm);
+    transition: all var(--transition);
 }
 
 #pag li span, #pag li a:hover {
     color: #FFF;
-    background-color: #9e4414;
-    border: 1px solid #9e4414;
+    background-color: var(--color-primary);
+    border: 1px solid var(--color-primary);
+}
+
+#pag .page-item .page-link {
+    padding: 0.5rem 0.85rem;
+    border-radius: var(--radius-sm);
 }
 
 ul, ol {
     padding-left: 13px;
+}
+
+.contentCard {
+    background: var(--color-bg-card);
+    border-radius: var(--radius-md);
+    padding: 2rem;
+    box-shadow: var(--shadow-sm);
+}
+
+.articleContent {
+    max-width: 750px;
+}
+
+.articleContent p {
+    line-height: 1.75;
+}
+
+.tableWrapper {
+    background: var(--color-bg-card);
+    border-radius: var(--radius-md);
+    padding: 1.5rem;
+    box-shadow: var(--shadow-sm);
+    overflow: hidden;
+}
+
+.tableWrapper .table {
+    margin-bottom: 0;
+}
+
+.contactCard {
+    background: var(--color-bg-card);
+    border-radius: var(--radius-md);
+    padding: 1.5rem;
+    box-shadow: var(--shadow-sm);
+    height: 100%;
+}
+
+.contactCard svg {
+    color: var(--color-primary);
+    width: 1.1em;
+    height: 1.1em;
+}
+
+/* Lightbox */
+.lightbox-overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.9);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 9999;
+}
+
+.lightbox-image {
+    max-width: 90vw;
+    max-height: 85vh;
+    object-fit: contain;
+    border-radius: var(--radius-sm);
+}
+
+.lightbox-close {
+    position: absolute;
+    top: 15px;
+    right: 20px;
+    background: none;
+    border: none;
+    color: #fff;
+    font-size: 2.5rem;
+    cursor: pointer;
+    line-height: 1;
+    padding: 0 8px;
+    opacity: 0.8;
+    transition: opacity var(--transition);
+}
+
+.lightbox-close:hover {
+    opacity: 1;
+}
+
+.lightbox-nav {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background: none;
+    border: none;
+    color: #fff;
+    font-size: 3rem;
+    cursor: pointer;
+    padding: 10px 16px;
+    opacity: 0.7;
+    transition: opacity var(--transition);
+    user-select: none;
+}
+
+.lightbox-nav:hover {
+    opacity: 1;
+}
+
+.lightbox-prev {
+    left: 10px;
+}
+
+.lightbox-next {
+    right: 10px;
+}
+
+.lightbox-counter {
+    position: absolute;
+    bottom: 20px;
+    left: 50%;
+    transform: translateX(-50%);
+    color: rgba(255, 255, 255, 0.7);
+    font-size: 0.9rem;
 }

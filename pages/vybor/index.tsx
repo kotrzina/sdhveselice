@@ -22,22 +22,24 @@ const BoardPage = (props: Props) => {
             <h1>Výbor SDH Veselice</h1>
 
             <Col lg={8}>
-                <Table responsive={true}>
-                    <tbody>
-                    <tr>
-                        <th>Funkce</th>
-                        <th>Jméno</th>
-                    </tr>
-                    {props.members.map((person, idx) => {
-                        return (
-                            <tr key={idx}>
-                                <td>{person.func}</td>
-                                <td>{person.name}&nbsp;({person.born})</td>
-                            </tr>
-                        )
-                    })}
-                    </tbody>
-                </Table>
+                <div className={'tableWrapper'}>
+                    <Table responsive={true} striped>
+                        <tbody>
+                        <tr>
+                            <th>Funkce</th>
+                            <th>Jméno</th>
+                        </tr>
+                        {props.members.map((person, idx) => {
+                            return (
+                                <tr key={idx}>
+                                    <td>{person.func}</td>
+                                    <td>{person.name}&nbsp;({person.born})</td>
+                                </tr>
+                            )
+                        })}
+                        </tbody>
+                    </Table>
+                </div>
             </Col>
         </Row>
     );

@@ -1,17 +1,30 @@
 .navBox {
     padding: 0;
-    background-color: #9e4414;
+    background: linear-gradient(135deg, var(--color-primary-dark) 0%, var(--color-primary) 100%);
+    box-shadow: var(--shadow-md);
 }
 
-#navBoxList {
+@media (max-width: 991px) {
+    .navBox {
+        padding: 0.4rem 0;
+    }
+}
 
+.brand {
+    color: #fff !important;
+    font-weight: bold;
+    font-size: 1.2rem;
+    letter-spacing: 0.02em;
 }
 
 #navBoxList a {
     color: #fff;
     font-weight: bold;
-    font-size: 1.24rem;
+    font-size: 1.1rem;
+    letter-spacing: 0.02em;
     padding: 1rem 1.1rem;
+    border-radius: var(--radius-sm);
+    transition: all var(--transition);
 }
 
 #navBoxList a.none {
@@ -19,16 +32,31 @@
 }
 
 #navBoxList a:hover {
-    color: #000;
-    background-color: #eee;
+    color: #fff;
+    background-color: rgba(255,255,255,0.15);
 }
 
 #navBoxList a.active {
-    color: #000;
-    background-color: #eee;
+    color: #fff;
+    background-color: transparent;
+    border-bottom: 2px solid #fff;
+    border-radius: 0;
 }
 
 #navBoxList a.lesempolem:hover {
     color: #fff;
     background-color: #9E8914;
+}
+
+/* Mobile hamburger toggle */
+.navBox :global(.navbar-toggler) {
+    border-color: rgba(255,255,255,0.5);
+}
+
+.navBox :global(.navbar-toggler):focus {
+    box-shadow: 0 0 0 0.2rem rgba(255,255,255,0.25);
+}
+
+.navBox :global(.navbar-toggler-icon) {
+    background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 30 30'%3e%3cpath stroke='rgba%28255,255,255,1%29' stroke-linecap='round' stroke-miterlimit='10' stroke-width='2' d='M4 7h22M4 15h22M4 23h22'/%3e%3c/svg%3e");
 }
