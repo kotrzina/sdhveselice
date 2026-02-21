@@ -23,6 +23,7 @@
     font-size: 1.1rem;
     letter-spacing: 0.02em;
     padding: 1rem 1.1rem;
+    border-bottom: 2px solid transparent;
     border-radius: var(--radius-sm);
     transition: all var(--transition);
 }
@@ -39,7 +40,7 @@
 #navBoxList a.active {
     color: #fff;
     background-color: transparent;
-    border-bottom: 2px solid #fff;
+    border-bottom-color: #fff;
     border-radius: 0;
 }
 

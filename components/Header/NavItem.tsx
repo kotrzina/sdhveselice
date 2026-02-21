@@ -30,7 +30,10 @@ export const NavItem = (props: Props) => {
         if (link.includes('lesempolem')) {
             return css.lesempolem
         }
-        return ''
+        if (isActive(link)) {
+            return css.active
+        }
+        return css.none
     }
 
     return (
