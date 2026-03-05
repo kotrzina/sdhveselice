@@ -136,6 +136,7 @@ ul, ol {
     border-radius: var(--radius-md);
     padding: 2rem;
     box-shadow: var(--shadow-sm);
+    height: 100%;
 }
 
 .articleContent {

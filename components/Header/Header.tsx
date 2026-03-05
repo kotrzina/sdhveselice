@@ -18,6 +18,7 @@ export const Header = () => {
                         <NavItem title={'Výbor'} link={'/vybor'}/>
                         <NavItem title={'Závody ve Veselici'} link={'/zavody'}/>
                         <NavItem title={'Kontakty'} link={'/kontakty'}/>
+                        <NavItem title={'Kalendář akcí'} link={'/akce'}/>
                         <NavItem title={'Lesempolem 🏃'} link={'https://lesempolem.cz'}/>
                     </Nav>
                 </Navbar.Collapse>

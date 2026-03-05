@@ -1,6 +1,7 @@
 import React from "react";
 import {Col, Row} from 'react-bootstrap';
 import {ArticleBar} from "../components/ArticleBar/ArticleBar";
+import {EventsPanel} from "../components/EventsPanel/EventsPanel";
 import {GetStaticPropsContext, GetStaticPropsResult} from "next";
 import {getArticles} from "../articles/ArticleList";
 import Head from "next/head";
@@ -65,7 +66,10 @@ const Home = (props: Props) => {
                 </div>
             </Col>
 
-            <ArticleBar articles={props.articles} lg={4}/>
+            <Col lg={4} className="d-flex flex-column">
+                <ArticleBar articles={props.articles}/>
+                <EventsPanel/>
+            </Col>
         </Row>
     )
 }
@@ -74,7 +78,7 @@ export default Home
 
 
 export async function getStaticProps(context: GetStaticPropsContext): Promise<GetStaticPropsResult<Props>> {
-    const articles = getArticles().slice(0, 4)
+    const articles = getArticles().slice(0, 3)
     const list = articles.map(article => {
         return {
             title: article.getTitle(),

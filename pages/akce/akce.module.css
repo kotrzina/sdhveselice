@@ -1,0 +1,44 @@
+.eventList {
+    list-style: none;
+    padding: 0;
+}
+
+.eventRow {
+    display: flex;
+    align-items: baseline;
+    padding: 12px 0;
+}
+
+.eventRow:not(:last-child) {
+    border-bottom: 1px solid var(--color-border);
+}
+
+.dateBadge {
+    flex-shrink: 0;
+    font-weight: bold;
+    font-size: 1.1em;
+    white-space: nowrap;
+    margin-right: 12px;
+}
+
+.eventTitle {
+    font-size: 1.1em;
+}
+
+.eventLink {
+    color: var(--color-primary);
+}
+
+.eventLink:hover {
+    color: var(--color-primary-light);
+}
+
+.past {
+    opacity: 0.5;
+}
+
+.pastLabel {
+    margin-left: 8px;
+    font-size: 0.85em;
+    color: var(--color-text-muted, #888);
+}

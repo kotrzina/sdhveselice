@@ -3,25 +3,37 @@
 [![cypress](https://github.com/kotrzina/sdhveselice/actions/workflows/cypress.yml/badge.svg)](https://github.com/kotrzina/sdhveselice/actions/workflows/cypress.yml)
 [![WTFPL](http://www.wtfpl.net/wp-content/uploads/2012/12/wtfpl-badge-4.png)](http://www.wtfpl.net/)
 
-Application uses [Next.js](https://nextjs.org/) project.
+Application uses [Next.js](https://nextjs.org/) with Static Site Generation (SSG).
 
 ## Develop
 
-Development version runs on port `3000`. Just run following command and open your browser: `http://localhost:3000`.
+Start the development server and open your browser at `http://localhost:3000`:
 
 ```
-yarn run dev
+npm run dev
 ```
 
 ## Production
 
-Production build uses Next-gen Static Site Generation (SSG). It means that all pages are rendered build time.
+Production build generates a fully static website. All pages are rendered at build time.
 
 ```
-yarn run build
+npm run build
 ```
 
-Then you can find complete static website in `out` directory.
+The complete static site is output to the `out` directory. To serve it locally:
+
+```
+npm run start
+```
+
+## Tests
+
+End-to-end tests use [Cypress](https://www.cypress.io/):
+
+```
+npm test
+```
 
 ## Deploy
 

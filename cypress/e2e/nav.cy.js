@@ -10,6 +10,7 @@ describe('navigation', () => {
             'Výbor',
             'Závody',
             'Kontakty',
+            'Kalendář',
         ]
 
         navs.map(nav => {
@@ -26,6 +27,7 @@ describe('navigation', () => {
         testNav('Výbor', false)
         testNav('Závody', false)
         testNav('Kontakty', false)
+        testNav('Kalendář', false)
     })
 
     it('test brand link', () => {

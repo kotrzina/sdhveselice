@@ -15,7 +15,7 @@ describe('walk', () => {
     it('test #1', () => {
         cy.visit('/')
         cy.get('h1').should('contain.text', 'SDH Veselice')
-        cy.get('h2 a').click()
+        cy.get('h2 a').first().click()
         cy.get('h1').should('contain.text', 'Novinky')
         cy.get('h2').first().click()
 
@@ -34,6 +34,7 @@ describe('walk', () => {
         testRace("Závody ve Veselici 1996 - 2000")
 
         // Contacts
+        cy.url().should('include', '/zavody')
         cy.get('.navbar-nav a').contains('Kontakty').click()
         cy.get('h1').should('contain.text', 'Kontakty')
         cy.contains("65339851")
