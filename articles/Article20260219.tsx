@@ -1,6 +1,7 @@
 import {Article} from "./Article";
 import {ReactElement} from "react";
 import {Button} from "react-bootstrap";
+import {FacebookIcon} from "../components/Icons/FacebookIcon";
 
 export class Article20260219 extends Article {
 
@@ -59,6 +60,12 @@ export class Article20260219 extends Article {
                         target={"_blank"}
                         variant={"success"}
                     >Více informací a registrace</Button>
+                    {' '}
+                    <Button
+                        href={"https://www.facebook.com/events/1592463581972768/"}
+                        target={"_blank"}
+                        variant={"primary"}
+                    ><FacebookIcon/> Událost na Facebooku</Button>
                 </p>
             </>
         )
