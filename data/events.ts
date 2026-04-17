@@ -19,6 +19,12 @@ export const events2026: EventItem[] = [
         date: '2026-02-14',
     },
     {
+        dateLabel: '30. 4.',
+        title: 'Pálení čarodějnic',
+        link: '/clanek/paleni-carodejnic-2026/',
+        date: '2026-04-30',
+    },
+    {
         dateLabel: '16. 5.',
         title: 'Lesempolem',
         link: '/clanek/pozvanka-na-lesempolem-2026/',
