@@ -13,7 +13,7 @@ export class Article20231210 extends Article {
     }
 
     getImage(): string {
-        return "/gallery/lyze_2023/5.webp"
+        return "/articles/lyze_2023.webp"
     }
 
     getPreheader(): string | null {
