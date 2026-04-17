@@ -33,7 +33,7 @@ export const events2026: EventItem[] = [
     {
         dateLabel: '13. - 14. 6.',
         title: 'Pouť a IV. sjezd rodáků',
-        link: '/clanek/sjezd-rodaku-2026/',
+        link: '/clanek/pout-a-sjezd-rodaku-2026/',
         date: '2026-06-14',
     },
 ]

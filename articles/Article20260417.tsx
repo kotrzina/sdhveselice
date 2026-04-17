@@ -8,7 +8,7 @@ export class Article20260417 extends Article {
     }
 
     getSlug(): string {
-        return "sjezd-rodaku-2026"
+        return "pout-a-sjezd-rodaku-2026"
     }
 
     getImage(): string {
