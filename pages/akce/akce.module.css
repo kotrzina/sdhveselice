@@ -42,3 +42,15 @@
     font-size: 0.85em;
     color: var(--color-text-muted, #888);
 }
+
+.fbLink {
+    display: inline-flex;
+    align-items: center;
+    margin-left: 10px;
+    color: #1877f2;
+    vertical-align: middle;
+}
+
+.fbLink:hover {
+    color: #0c5dc7;
+}

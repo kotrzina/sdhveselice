@@ -47,6 +47,18 @@
     color: var(--color-primary-light);
 }
 
+.fbLink {
+    display: inline-flex;
+    align-items: center;
+    margin-left: 8px;
+    color: #1877f2;
+    vertical-align: middle;
+}
+
+.fbLink:hover {
+    color: #0c5dc7;
+}
+
 .past {
     opacity: 0.5;
 }
