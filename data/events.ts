@@ -32,8 +32,8 @@ export const events2026: EventItem[] = [
     },
     {
         dateLabel: '13. - 14. 6.',
-        title: 'Pouť ve Veselici',
-        link: null,
+        title: 'Pouť a IV. sjezd rodáků',
+        link: '/clanek/pout-a-sjezd-rodaku-2026/',
         date: '2026-06-14',
     },
 ]

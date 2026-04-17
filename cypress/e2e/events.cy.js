@@ -12,7 +12,7 @@ describe('events', () => {
         cy.contains('3. 1.').parent().should('contain.text', 'Valná hromada SDH Veselice')
         cy.contains('14. 2.').parent().should('contain.text', 'Ostatky')
         cy.contains('16. 5.').parent().should('contain.text', 'Lesempolem')
-        cy.contains('13. - 14. 6.').parent().should('contain.text', 'Pouť ve Veselici')
+        cy.contains('13. - 14. 6.').parent().should('contain.text', 'Pouť a IV. sjezd rodáků')
     })
 
     it('events page links work', () => {
