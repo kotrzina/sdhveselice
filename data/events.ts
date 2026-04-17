@@ -3,7 +3,6 @@ export type EventItem = {
     title: string
     link: string | null
     date: string
-    fbEvent?: string
 }
 
 export const events2026: EventItem[] = [
@@ -24,20 +23,17 @@ export const events2026: EventItem[] = [
         title: 'Pálení čarodějnic',
         link: '/clanek/paleni-carodejnic-2026/',
         date: '2026-04-30',
-        fbEvent: 'https://www.facebook.com/events/1758452195136273/',
     },
     {
         dateLabel: '16. 5.',
         title: 'Lesempolem',
         link: '/clanek/pozvanka-na-lesempolem-2026/',
         date: '2026-05-16',
-        fbEvent: 'https://www.facebook.com/events/1592463581972768/',
     },
     {
         dateLabel: '13. - 14. 6.',
         title: 'Pouť a IV. sjezd rodáků',
         link: '/clanek/pout-a-sjezd-rodaku-2026/',
         date: '2026-06-14',
-        fbEvent: 'https://www.facebook.com/events/1497640201808642/',
     },
 ]

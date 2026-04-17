@@ -3,7 +3,6 @@ import Link from 'next/link';
 import Head from 'next/head';
 import css from './akce.module.css';
 import {events2026, EventItem} from '../../data/events';
-import {FacebookIcon} from '../../components/Icons/FacebookIcon';
 
 const AkcePage = () => {
     const [today, setToday] = useState<string | null>(null);
@@ -30,18 +29,6 @@ const AkcePage = () => {
                                     <Link href={event.link} className={css.eventLink}>{event.title}</Link>
                                 ) : (
                                     <span>{event.title}</span>
-                                )}
-                                {event.fbEvent && (
-                                    <a
-                                        href={event.fbEvent}
-                                        target="_blank"
-                                        rel="noopener noreferrer"
-                                        className={css.fbLink}
-                                        aria-label="Událost na Facebooku"
-                                        title="Událost na Facebooku"
-                                    >
-                                        <FacebookIcon/>
-                                    </a>
                                 )}
                                 {isPast(event) && <span className={css.pastLabel}>(proběhlo)</span>}
                             </span>

@@ -2,7 +2,6 @@ import {useEffect, useState} from 'react';
 import Link from 'next/link';
 import css from './eventsPanel.module.css';
 import {events2026, EventItem} from '../../data/events';
-import {FacebookIcon} from '../Icons/FacebookIcon';
 
 export const EventsPanel = () => {
     const [today, setToday] = useState<string | null>(null);
@@ -23,18 +22,6 @@ export const EventsPanel = () => {
                         <Link href={event.link} className={css.eventLink}>{event.title}</Link>
                     ) : (
                         <span>{event.title}</span>
-                    )}
-                    {event.fbEvent && (
-                        <a
-                            href={event.fbEvent}
-                            target="_blank"
-                            rel="noopener noreferrer"
-                            className={css.fbLink}
-                            aria-label="Událost na Facebooku"
-                            title="Událost na Facebooku"
-                        >
-                            <FacebookIcon/>
-                        </a>
                     )}
                 </div>
             ))}
