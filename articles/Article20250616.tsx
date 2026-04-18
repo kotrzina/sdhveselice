@@ -13,7 +13,7 @@ export class Article20250616 extends Article {
     }
 
     getImage(): string {
-        return "/gallery/pout_2025/1.webp"
+        return "/articles/pout_2025.webp"
     }
 
     getPreheader(): string | null {

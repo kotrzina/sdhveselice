@@ -14,7 +14,7 @@ export class Article20240606 extends Article {
     }
 
     getImage(): string {
-        return "/gallery/lesempolem_2024/2.webp"
+        return "/articles/lesempolem_2024.webp"
     }
 
     getPreheader(): string | null {
