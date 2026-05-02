@@ -4,7 +4,7 @@ import {ReactElement} from "react";
 import {Button} from "react-bootstrap";
 import {FacebookIcon} from "../components/Icons/FacebookIcon";
 
-export class Article20260416 extends Article {
+export class Article20260430 extends Article {
 
     getTitle(): string {
         return "Pálení čarodějnic ve Veselici"
@@ -67,6 +67,6 @@ export class Article20260416 extends Article {
     }
 
     getPublishDate(): Date {
-        return new Date(2026, 3, 16)
+        return new Date(2026, 3, 30)
     }
 }
