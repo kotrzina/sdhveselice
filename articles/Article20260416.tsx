@@ -31,6 +31,7 @@ export class Article20260416 extends Article {
         "/gallery/carodejnice_2026/6.jpg",
         "/gallery/carodejnice_2026/7.jpg",
         "/gallery/carodejnice_2026/8.jpg",
+        "/gallery/carodejnice_2026/9.jpg",
     ]
 
     getContent(): ReactElement {
