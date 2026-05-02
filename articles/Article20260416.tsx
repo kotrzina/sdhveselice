@@ -1,4 +1,5 @@
 import {Article} from "./Article";
+import {Gallery} from "../components/Gallery/Gallery";
 import {ReactElement} from "react";
 import {Button} from "react-bootstrap";
 import {FacebookIcon} from "../components/Icons/FacebookIcon";
@@ -18,34 +19,40 @@ export class Article20260416 extends Article {
     }
 
     getPreheader(): string | null {
-        return "Srdečně Vás zveme na Pálení čarodějnic ve čtvrtek 30. 4. 2026 od 16:00 na Svazarmu ve Veselici."
+        return "Ve čtvrtek 30. 4. 2026 jsme na Svazarmu ve Veselici uspořádali Pálení čarodějnic. Program byl letos obohacen o čarodějnické klání pro děti."
     }
+
+    gallery: Array<string> = [
+        "/gallery/carodejnice_2026/1.jpg",
+        "/gallery/carodejnice_2026/2.jpg",
+        "/gallery/carodejnice_2026/3.jpg",
+        "/gallery/carodejnice_2026/4.jpg",
+        "/gallery/carodejnice_2026/5.jpg",
+        "/gallery/carodejnice_2026/6.jpg",
+        "/gallery/carodejnice_2026/7.jpg",
+        "/gallery/carodejnice_2026/8.jpg",
+    ]
 
     getContent(): ReactElement {
         return (
             <>
                 <p>
-                    Srdečně Vás zveme na Pálení čarodějnic. Přijďte si s námi užít podvečer plný ohně a pohody.
+                    Pálení čarodějnic máme za sebou. Ve čtvrtek 30. 4. 2026 jsme se sešli na Svazarmu ve Veselici,
+                    abychom společně užili podvečer plný ohně a pohody.
                 </p>
 
                 <p>
-                    <ul>
-                        <li><strong>Kdy:</strong> čtvrtek 30. 4. 2026 od 16:00</li>
-                        <li><strong>Kde:</strong> Na Svazarmu, Veselice</li>
-                    </ul>
+                    Program byl letos obohacen o čarodějnické klání, které začalo zhruba od 17:00. Děti procházely
+                    celkem patnáct stanovišť a plnily nejrůznější úkoly. Na konci na ně čekala odměna v podobě
+                    objeveného pokladu.
                 </p>
 
-                <h3>Co Vás čeká</h3>
                 <p>
-                    <ul>
-                        <li>Vatra</li>
-                        <li>Skákací hrad pro děti</li>
-                        <li>Opékání párků na ohni (párky k zakoupení na místě)</li>
-                        <li>Občerstvení zajištěno</li>
-                    </ul>
+                    Nechybělo ani tradiční zázemí akce — vatra, skákací hrad, opékání párků a občerstvení.
+                    Děkujeme všem, kteří přišli, i těm, kteří se podíleli na přípravě.
                 </p>
 
-                <p>Těšíme se na Vás!</p>
+                <Gallery srcs={this.gallery}/>
 
                 <p>
                     <Button
