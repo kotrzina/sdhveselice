@@ -27,7 +27,7 @@ export const events2026: EventItem[] = [
     {
         dateLabel: '16. 5.',
         title: 'Lesempolem',
-        link: '/clanek/pozvanka-na-lesempolem-2026/',
+        link: '/clanek/lesempolem-2026/',
         date: '2026-05-16',
     },
     {
