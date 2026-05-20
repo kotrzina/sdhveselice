@@ -52,6 +52,7 @@ export class Article20260417 extends Article {
                         <li><strong>13:00</strong> přivítání rodáků, beseda v kulturním domě</li>
                         <li>odpoledne volný program</li>
                         <li>křest fotoknihy Veselice</li>
+                        <li>pohádka nejen pro dospělé <em>O Kokoketce</em></li>
                         <li>k poslechu hraje kapela Frívajvl</li>
                     </ul>
                 </p>
