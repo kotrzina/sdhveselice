@@ -206,6 +206,8 @@ export class Article20260531 extends Article {
                     "/gallery/okrsek_2026/5.webp",
                     "/gallery/okrsek_2026/6.webp",
                     "/gallery/okrsek_2026/7.webp",
+                    "/gallery/okrsek_2026/8.webp",
+                    "/gallery/okrsek_2026/9.webp",
                 ]}/>
             </>
         )
