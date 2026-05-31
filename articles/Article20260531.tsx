@@ -52,26 +52,31 @@ export class Article20260531 extends Article {
                     </tr>
                     <tr>
                         <td>1.</td>
+                        <td>Šošůvka</td>
+                        <td>24,01 s</td>
+                    </tr>
+                    <tr>
+                        <td>2.</td>
                         <td>Žďár</td>
                         <td>24,05 s</td>
                     </tr>
                     <tr>
-                        <td>2.</td>
+                        <td>3.</td>
                         <td>Kuničky</td>
                         <td>26,21 s</td>
                     </tr>
                     <tr>
-                        <td>3.</td>
+                        <td>4.</td>
                         <td>Petrovice</td>
                         <td>26,28 s</td>
                     </tr>
                     <tr>
-                        <td>4.</td>
+                        <td>5.</td>
                         <td>Sloup</td>
                         <td>29,17 s</td>
                     </tr>
                     <tr>
-                        <td>5.</td>
+                        <td>6.</td>
                         <td>Veselice</td>
                         <td>58,76 s</td>
                     </tr>
