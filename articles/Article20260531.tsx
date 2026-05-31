@@ -129,7 +129,7 @@ export class Article20260531 extends Article {
                         <td>4.</td>
                         <td>Suchdol</td>
                         <td>39,76</td>
-                        <td>31,68</td>
+                        <td>30,76</td>
                         <td>39,68 s</td>
                     </tr>
                     <tr>
