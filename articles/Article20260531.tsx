@@ -46,108 +46,153 @@ export class Article20260531 extends Article {
                 <br/>
                 <h2>Výsledky</h2>
                 <Table bordered={true}>
+                    <thead>
+                    <tr>
+                        <th></th>
+                        <th>Sbor</th>
+                        <th>Levý proud</th>
+                        <th>Pravý proud</th>
+                        <th>Čas</th>
+                    </tr>
+                    </thead>
                     <tbody>
                     <tr>
-                        <td colSpan={3}><strong>Muži do 35 let</strong></td>
+                        <td colSpan={5}><strong>Muži do 35 let</strong></td>
                     </tr>
                     <tr>
                         <td>1.</td>
                         <td>Šošůvka</td>
+                        <td>24,01</td>
+                        <td>23,44</td>
                         <td>24,01 s</td>
                     </tr>
                     <tr>
                         <td>2.</td>
                         <td>Žďár</td>
+                        <td>23,27</td>
+                        <td>24,05</td>
                         <td>24,05 s</td>
                     </tr>
                     <tr>
                         <td>3.</td>
                         <td>Kuničky</td>
+                        <td>26,21</td>
+                        <td>25,48</td>
                         <td>26,21 s</td>
                     </tr>
                     <tr>
                         <td>4.</td>
                         <td>Petrovice</td>
+                        <td>26,28</td>
+                        <td>22,56</td>
                         <td>26,28 s</td>
                     </tr>
                     <tr>
                         <td>5.</td>
                         <td>Sloup</td>
+                        <td>28,18</td>
+                        <td>29,17</td>
                         <td>29,17 s</td>
                     </tr>
                     <tr>
                         <td>6.</td>
                         <td>Veselice</td>
+                        <td>58,76</td>
+                        <td>58,29</td>
                         <td>58,76 s</td>
                     </tr>
                     <tr>
-                        <td colSpan={3}><strong>Ženy</strong></td>
+                        <td colSpan={5}><strong>Ženy</strong></td>
                     </tr>
                     <tr>
                         <td>1.</td>
                         <td>Petrovice</td>
+                        <td>19,78</td>
+                        <td>29,42</td>
                         <td>29,42 s</td>
                     </tr>
                     <tr>
                         <td>2.</td>
                         <td>Sloup</td>
-                        <td>N</td>
+                        <td>75,44</td>
+                        <td>77,50</td>
+                        <td>NP</td>
                     </tr>
                     <tr>
-                        <td colSpan={3}><strong>Muži nad 35 let</strong></td>
+                        <td colSpan={5}><strong>Muži nad 35 let</strong></td>
                     </tr>
                     <tr>
                         <td>1.</td>
                         <td>Němčice</td>
+                        <td>21,14</td>
+                        <td>22,58</td>
                         <td>22,58 s</td>
                     </tr>
                     <tr>
                         <td>2.</td>
                         <td>Petrovice</td>
+                        <td>25,07</td>
+                        <td>24,68</td>
                         <td>24,68 s</td>
                     </tr>
                     <tr>
                         <td>3.</td>
                         <td>Vavřinec</td>
+                        <td>29,03</td>
+                        <td>29,23</td>
                         <td>29,23 s</td>
                     </tr>
                     <tr>
                         <td>4.</td>
                         <td>Sloup</td>
+                        <td>26,91</td>
+                        <td>33,53</td>
                         <td>33,53 s</td>
                     </tr>
                     <tr>
                         <td>5.</td>
                         <td>Suchdol</td>
+                        <td>39,76</td>
+                        <td>34,68</td>
                         <td>39,68 s</td>
                     </tr>
                     <tr>
                         <td>6.</td>
                         <td>Housko</td>
+                        <td>36,92</td>
+                        <td>46,66</td>
                         <td>46,66 s</td>
                     </tr>
                     <tr>
                         <td>7.</td>
                         <td>Vysočany</td>
-                        <td>N</td>
+                        <td>28,78</td>
+                        <td>NP</td>
+                        <td>NP</td>
                     </tr>
                     <tr>
-                        <td colSpan={3}><strong>Dorost</strong></td>
+                        <td colSpan={5}><strong>Dorost</strong></td>
                     </tr>
                     <tr>
                         <td>1.</td>
                         <td>Žďár</td>
+                        <td>17,80</td>
+                        <td>18,53</td>
                         <td>18,53 s</td>
                     </tr>
                     <tr>
                         <td>2.</td>
                         <td>Vysočany</td>
+                        <td>60,39</td>
+                        <td>66,37</td>
                         <td>66,66 s</td>
                     </tr>
                     <tr>
                         <td>3.</td>
                         <td>Kuničky</td>
-                        <td>N</td>
+                        <td>29,47</td>
+                        <td>32,72</td>
+                        <td>NP</td>
                     </tr>
                     </tbody>
                 </Table>
