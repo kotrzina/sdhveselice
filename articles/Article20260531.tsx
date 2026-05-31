@@ -135,7 +135,7 @@ export class Article20260531 extends Article {
                     <tr>
                         <td>5.</td>
                         <td>Housko</td>
-                        <td>36,92</td>
+                        <td>36,97</td>
                         <td>46,66</td>
                         <td>46,66 s</td>
                     </tr>
