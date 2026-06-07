@@ -39,9 +39,10 @@ export class Article20260417 extends Article {
                 <h3>Sobota 13. 6. — Pouť</h3>
                 <p>
                     <ul>
-                        <li><strong>12:00</strong> zahájení pouti, hry pro děti</li>
+                        <li><strong>13:00</strong> zahájení pouti, hry pro děti</li>
                         <li>pohádkoví Pat a Mat</li>
                         <li>loutkové divadlo <em>O kohoutkovi a slepičce</em></li>
+                        <li><strong>17:00</strong> mše svatá u kapličky</li>
                         <li><strong>21:00</strong> taneční zábava — k tanci hraje Trio Kent</li>
                     </ul>
                 </p>
